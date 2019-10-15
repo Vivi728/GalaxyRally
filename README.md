@@ -142,7 +142,7 @@ iOS版下载地址：https://testflight.apple.com/join/ilhbukjt
 部分内容将实时更新。
 
 1. 比赛细则
-2. [节点编译部署指南](Phase1/_PlatON节点编译部署指南)
+2. [节点编译部署指南]([https://github.com/PlatONnetwork/GalaxyRally/blob/master/Phase1/_PlatON%E8%8A%82%E7%82%B9%E7%BC%96%E8%AF%91%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97.md](https://github.com/PlatONnetwork/GalaxyRally/blob/master/Phase1/_PlatON节点编译部署指南.md))
 3. 节点接入手册
 4. SDK及开发指南
 5. ATON用户手册
