@@ -110,27 +110,27 @@ PlatON是专注于可扩展性和隐私保护的高性能分布式计算网络�
 
 ### 节点
 
-- [PlatON验证节点介绍](http://192.168.9.66/PlatON-GalaxyRally/GalaxyRally/blob/master/Phase1/PlatON验证节点介绍.md)
-- [PlatON节点安装部署手册](http://192.168.9.66/PlatON-GalaxyRally/GalaxyRally/blob/master/Phase1/PlatON节点安装部署手册.md)
-- [在线MTool使用手册](http://192.168.9.66/PlatON-GalaxyRally/GalaxyRally/blob/master/Phase1/在线MTool使用手册.md)
-- [离线MTool使用手册](http://192.168.9.66/PlatON-GalaxyRally/GalaxyRally/blob/master/Phase1/离线MTool使用手册.md)
+- [PlatON验证节点介绍](https://github.com/PlatONnetwork/GalaxyRally/blob/master/technologies/PlatON%E9%AA%8C%E8%AF%81%E8%8A%82%E7%82%B9%E4%BB%8B%E7%BB%8D.md)
+- [PlatON节点安装部署手册]()
+- [在线MTool使用手册]()
+- [离线MTool使用手册]()
 
 ### 钱包
 
-- [ATON使用手册](http://192.168.9.66/PlatON-GalaxyRally/GalaxyRally/blob/master/Phase1/ATON钱包用户使用手册.md)
+- [ATON使用手册]()
 
 ### 治理与升级
 
-- [PlatON链上治理升级指南](http://192.168.9.66/PlatON-GalaxyRally/GalaxyRally/blob/master/Phase1/链上治理升级指南.md)
-- [PlatON链下数据回滚升级指南](http://192.168.9.66/PlatON-GalaxyRally/GalaxyRally/blob/master/Phase1/链下数据回滚升级指南.md)
+- [PlatON链上治理升级指南]()
+- [PlatON链下数据回滚升级指南]()
 
 ### 开发指南
 
-- [JAVA SDK](http://192.168.9.66/PlatON-GalaxyRally/GalaxyRally/blob/master/Phase1/Java-SDK.md)
-- [JS SDK](http://192.168.9.66/PlatON-GalaxyRally/GalaxyRally/blob/master/Phase1/JavaScript-API.md)
-- [JSON RPC](http://192.168.9.66/PlatON-GalaxyRally/GalaxyRally/blob/master/Phase1/JSON-RPC.md) 
+- [JAVA SDK]()
+- [JS SDK]()
+- [JSON RPC]() 
 
 ### 拉力赛FAQ
 
-- [FAQ](http://192.168.9.66/PlatON-GalaxyRally/GalaxyRally/blob/master/FAQ.md)
+- [FAQ]()
 
