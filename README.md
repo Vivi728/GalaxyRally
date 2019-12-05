@@ -46,7 +46,7 @@ PlatON环银河拉力赛将进行多赛站的比赛。我们会根据PlatON网�
 
 如有任何问题，请通过以下渠道向组委会反馈，或向社区提问：
 - [GitHub](https://github.com/PlatONnetwork/GalaxyRally)：您可以在这里找到本次拉力赛的所有相关文档、SDK、比赛进展公告，及所有的问题讨论。
-- [Gitter社区]
+- Gitter社区
     * [拉力赛讨论](https://gitter.im/PlatON_Network/Rally)
     * [PIP讨论](https://gitter.im/PlatON_Network/PIP)
 - 拉力赛支持邮箱：[rally@platon.network](mailto:rally@platon.network)
