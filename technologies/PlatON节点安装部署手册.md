@@ -53,12 +53,13 @@ wget http://47.91.153.183/opensource/scripts/platon_setup.sh
 **step2.** 执行脚本
 
 ``` bash
-chmod +x platon_setup.sh && ./platon_setup.sh
+chmod +x platon_setup.sh && ./platon_setup.sh 0.7.4
 ```
 
 > 注意
 >
 > - 安装过程中会卸载旧版本的 platon，停止正在运行的 platon 进程，同时删除旧版本的数据。
+> - 0.7.4为指定安装的版本号，根据实际的版本号进行修改。
 > - 提示 `[sudo] password for` 时，请输入当前账户密码。
 > - 提示 `Press [ENTER] to continue or Ctrl-c to cancel adding it` 时，请输入回车键。
 > - 提示 `install platon and attach platon and get block number succeed` 时, 表示安装 PlatON 成功，未安装成功时，请通过我们的官方客户联系方式反馈具体问题。
@@ -101,7 +102,27 @@ PlatON 是实行民主治理的区块链项目，验证节点由所有 Energon �
 - 每个 Staking 周期期初，总票数（包括节点自质押和其他人的委托）排名前 101 名的节点，成为当前Staking周期的备选节点
 - 每个共识周期（250个区块一轮）的第230个区块，从当前 Staking 周期的101名备选节点中, 按总得票数权重随机选出 25 名验证节点来生产区块
 
-### 2.2 安装 MTool
+### 2.2  安装前准备
+
+360 安全卫士，腾讯电脑管家等杀毒软件会将工具文件误判为病毒文件进而删除，操作前建议关闭这些杀毒软件。
+
+windows键 + r ，输入 cmd， 调出 cmd 窗口，执行 `mtool-client.bat --version` 命令，执行结果正常，表示安装了旧版本，执行结果报错，表示没有安装旧版本不需要执行下面操作。
+
+已经安装旧版本，需要备份重要信息，手工卸载旧版本，操作步骤：
+
+**step1.** 备份目录 `C:\tools\mtool\current\keystore` 下的所有文件到 D 盘或其他非 `C:\tools` 的目录下。安装完新版本之后需要将备份文件拷贝回 `C:\tools\mtool\current\keystore` 目录下。
+
+**step2.** 备份目录 `C:\tools\mtool\current\validator` 下的所有文件到 D 盘或其他非 `C:\tools` 的目录下。安装完新版本之后需要将备份文件拷贝回 `C:\tools\mtool\current\validator` 目录下。
+
+**step3.**  左下角 windows 田字标识，右键，windows powershell（管理员），调出 管理员：powershell 执行界面。
+
+执行 `choco list --local-only` 命令， 获取包含 mtool 关键字的相关工具，如：`platon_mtool_other 0.7.3`, `platon_mtool_all 0.7.3`, `mtool 0.7.3` 等。
+
+执行 `choco uninstall platon_mtool_other 0.7.3` 等命令，一一卸载旧的相关软件。
+
+**step4.** 删除 `C:\tools\mtool`, `C:\tools\platon_mtool_other` 等 `C:\tools` 下包含 mtool 关键字的目录。
+
+### 2.3 安装 MTool
 
 MTool 是一个命令行版本的节点管理工具，可以方便地发起质押等交易，MTool对质押等交易提供两种签名方式：在线签名和离线签名。
 
@@ -140,7 +161,7 @@ iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.p
 > - 提示 `install and start mtool success` 时，表示 MTool 安装成功，未安装成功时，请通过我们的官方客户联系方式反馈具体问题。
 > - 提示 `请按任意键继续. . .` 时，请输入回车键关闭当前 cmd 窗口。
 
-### 2.3 创建钱包
+### 2.4 创建钱包
 
 PlatON中，参与验证节点进行出块要创建两个钱包。
 
@@ -164,7 +185,7 @@ PlatON中，参与验证节点进行出块要创建两个钱包。
 
   输入一次密码，再输入一次确认密码，即可创建钱包文件，创建成功后会在目录`C:\tools\mtool\current\keystore`下生成质押钱包文件`reward.json`。
 
-### 2.4 配置验证节点信息
+### 2.5 配置验证节点信息
 
 **step1.** 浏览器复制链接 <https://7w6qnuo9se.s3.eu-central-1.amazonaws.com/opensource/scripts/validator_conf.bat> 或者 <http://47.91.153.183/opensource/scripts/validator_conf.bat> 下载脚本
 
@@ -182,7 +203,7 @@ PlatON中，参与验证节点进行出块要创建两个钱包。
 > - 提示 `请按任意键继续. . .` 时，请输入回车键关闭当前 cmd 窗口。
 > - 请到 `C:\tools\mtool\current\validator` 目录下，查看 validator_config.json 内容，是否有异常。
 
-### 2.5 申请质押资金
+### 2.6 申请质押资金
 
 质押资金 LAT 要向 PlatON 官方申请，请发送邮件到 PlatON 官方邮箱 <support@platon.network> ，格式如下：
 
@@ -204,7 +225,7 @@ PlatON中，参与验证节点进行出块要创建两个钱包。
 
 申请提交之后，请耐心等待，可在 PlatON 官方区块链浏览器 [PlatScan](https://platscan.platon.network) 主页面搜索框输入质押账户地址，确认官方发放的 token 是否已到账。
 
-### 2.6 验证节点质押
+### 2.7 验证节点质押
 
 利用节点工具 MTool 执行节点质押与委托等操作，对于有能力的开发者，可以在 Java SDK 和 Javascript SDK 基础上面开发自己的节点工具，SDK请参考文档。
 
@@ -228,7 +249,7 @@ mtool-client.bat staking --amount 1000000 --keystore %MTOOLDIR%\keystore\staking
 > - 提示 `please input keystore password:` 时，输入质押钱包的密码。
 > - 提示 `operation finished` 并且提示 `SUCCESS` 表明质押成功。
 
-### 2.7 验证节点确认
+### 2.8 验证节点确认
 
 完成质押操作后，可在 PlatON 官方区块链浏览器 [PlatScan](https://platscan.platon.network) 上点击主页上方验证节点列表，查看所有验证节点，或者在输入框输入节点名称查询节点具体信息，查看是否成为验证节点。
 
