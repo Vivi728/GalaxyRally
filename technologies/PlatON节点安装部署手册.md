@@ -106,19 +106,21 @@ PlatON 是实行民主治理的区块链项目，验证节点由所有 Energon �
 
 360 安全卫士，腾讯电脑管家等杀毒软件会将工具文件误判为病毒文件进而删除，操作前建议关闭这些杀毒软件。
 
-windows键 + r ，输入 cmd， 调出 cmd 窗口，执行 `mtool-client.bat --version` 命令，执行结果正常，表示安装了旧版本，执行结果报错，表示没有安装旧版本不需要执行下面操作。
+windows键 + x ，点击 Windows PowerShell(管理员)(A)，弹出窗口选择是，调出管理员：powershell 窗口，执行 `mtool-client.bat --version` 命令。
 
-已经安装旧版本，需要备份重要信息，手工卸载旧版本，操作步骤：
+执行结果显示`无法将“mtool-client.bat”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。`，表示没有安装旧版本不需要执行下面操作。
+
+执行结果显示版本号，时间戳等信息表示安装了旧版本，此时需要备份重要信息，然后再手工卸载旧版本，操作步骤：
 
 **step1.** 备份目录 `C:\tools\mtool\current\keystore` 下的所有文件到 D 盘或其他非 `C:\tools` 的目录下。安装完新版本之后需要将备份文件拷贝回 `C:\tools\mtool\current\keystore` 目录下。
 
 **step2.** 备份目录 `C:\tools\mtool\current\validator` 下的所有文件到 D 盘或其他非 `C:\tools` 的目录下。安装完新版本之后需要将备份文件拷贝回 `C:\tools\mtool\current\validator` 目录下。
 
-**step3.**  左下角 windows 田字标识，右键，windows powershell（管理员），调出 管理员：powershell 执行界面。
+**step3.**  在前面调出的 powershell 窗口中执行以下命令卸载 mtool 相关的旧版本工具软件。
 
 执行 `choco list --local-only` 命令， 获取包含 mtool 关键字的相关工具，如：`platon_mtool_other 0.7.3`, `platon_mtool_all 0.7.3`, `mtool 0.7.3` 等。
 
-执行 `choco uninstall platon_mtool_other 0.7.3` 等命令，一一卸载旧的相关软件。
+执行 `choco uninstall platon_mtool_other 0.7.3`， `choco uninstall platon_mtool_all 0.7.3` 等命令，逐个卸载旧的相关工具。
 
 **step4.** 删除 `C:\tools\mtool`, `C:\tools\platon_mtool_other` 等 `C:\tools` 下包含 mtool 关键字的目录。
 
@@ -133,12 +135,11 @@ MTool 是一个命令行版本的节点管理工具，可以方便地发起质�
 
 Windows环境下Mtool的安装步骤如下：
 
-**step1.**  左下角 windows 田字标识，右键，windows powershell（管理员），调出 管理员：powershell 执行界面，复制以下3条命令执行。
+**step1.**  在[安装前准备](#22-安装前准备)步骤调出的管理员：powershell 窗口中，复制以下2条命令执行。
 
 ```bash
 $env:chocolateyUseWindowsCompression = 'true'
 Set-ExecutionPolicy -ExecutionPolicy Bypass
-iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
 
 提示：
