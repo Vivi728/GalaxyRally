@@ -45,9 +45,11 @@ PlatON环银河拉力赛将进行多赛站的比赛。我们会根据PlatON网�
 ## 更多信息
 
 - [GitHub](https://github.com/PlatONnetwork/GalaxyRally)：您可以在这里找到本次拉力赛的所有文档、SDK、比赛进展公告，及所有的问题讨论。
+
  * [社区公告](https://github.com/PlatONnetwork/GalaxyRally/tree/master/announcement)
  * [PIPs](https://github.com/PlatONnetwork/GalaxyRally/tree/master/PIPs)
  * [文档]（https://github.com/PlatONnetwork/GalaxyRally/tree/master/technologies）
+ 
 - Gitter社区
     * [拉力赛讨论](https://gitter.im/PlatON_Network/Rally)
     * [PIP讨论](https://gitter.im/PlatON_Network/PIP)
@@ -82,5 +84,5 @@ PlatON环银河拉力赛将进行多赛站的比赛。我们会根据PlatON网�
 
 ### 拉力赛FAQ
 
-- [FAQ]()
+- [FAQ](https://github.com/PlatONnetwork/GalaxyRally/blob/master/FAQ)
 
