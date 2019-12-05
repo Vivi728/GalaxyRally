@@ -1,6 +1,6 @@
 # 拉力赛FAQ
-## 什么是环银河拉力赛？
-环银河拉力赛（以下简称拉力赛）是为了迎接PlatON主网上线，对其各项功能展开的全拟真环境下的全方位测试。比赛将由包括节点在内的多种不同类型的用户参与，参赛节点将通过竞争的形式完整模拟主网运行，并赢得比赛奖品。
+## 什么是PlatON环银河拉力赛？
+PlatON环银河拉力赛（以下简称拉力赛）是为了迎接PlatON主网上线，对其各项功能展开的全拟真环境下的全方位测试。比赛将由包括节点在内的多种不同类型的用户参与，参赛节点将通过竞争的形式完整模拟主网运行，并赢得比赛奖品。
 
 ## 为什么要举办拉力赛？
 举办拉力赛的主要目的包括：
@@ -37,21 +37,21 @@ PlatON环银河拉力赛将进行多赛站的比赛，每个赛站预计持续2-
 
 
 ## 谁能够参加拉力赛？
-成为PlatON验证节点有硬件环境、软件环境、运营能力等要求，具体要求请参见：[节点介绍文档]（https://github.com/PlatONnetwork/GalaxyRally/blob/master/technologies/PlatON%E9%AA%8C%E8%AF%81%E8%8A%82%E7%82%B9%E4%BB%8B%E7%BB%8D.md）
+成为PlatON验证节点有硬件环境、软件环境、运营能力等要求，具体要求请参见：[节点介绍文档](https://github.com/PlatONnetwork/GalaxyRally/blob/master/technologies/PlatON%E9%AA%8C%E8%AF%81%E8%8A%82%E7%82%B9%E4%BB%8B%E7%BB%8D.md)
 对于提交了申请并满足要求的参赛申请者，我们会邀请您参加比赛。
 
 ## 拉力赛什么时候开始？
 拉力赛将于2019年12月下旬开始，结束时间视贝莱世界测试网络情况而定，我们会至少提前5天通知社区。
 
 ## 参加拉力赛所需要的硬件条件是什么样的？
-节点配置建议请参见：[节点介绍文档]（https://github.com/PlatONnetwork/GalaxyRally/blob/master/technologies/PlatON%E9%AA%8C%E8%AF%81%E8%8A%82%E7%82%B9%E4%BB%8B%E7%BB%8D.md）
+节点配置建议请参见：[节点介绍文档](https://github.com/PlatONnetwork/GalaxyRally/blob/master/technologies/PlatON%E9%AA%8C%E8%AF%81%E8%8A%82%E7%82%B9%E4%BB%8B%E7%BB%8D.md)
 
 ## 我可以从哪得到更多信息和支持？
 - [GitHub](https://github.com/PlatONnetwork/GalaxyRally)：您可以在这里找到本次拉力赛的所有文档、SDK、比赛进展公告，及所有的问题讨论。
 
-  * [社区公告](https://github.com/PlatONnetwork/GalaxyRally/tree/master/announcement)
-  * [PIPs](https://github.com/PlatONnetwork/GalaxyRally/tree/master/PIPs)
-  * [文档](https://github.com/PlatONnetwork/GalaxyRally/tree/master/technologies)
+   * [社区公告](https://github.com/PlatONnetwork/GalaxyRally/tree/master/announcement)
+   * [PIPs](https://github.com/PlatONnetwork/GalaxyRally/tree/master/PIPs)
+   * [文档](https://github.com/PlatONnetwork/GalaxyRally/tree/master/technologies)
  
 - Gitter社区
     * [拉力赛讨论](https://gitter.im/PlatON_Network/Rally)
