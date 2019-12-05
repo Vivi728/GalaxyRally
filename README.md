@@ -54,28 +54,29 @@ PlatON环银河拉力赛将进行多赛站的比赛。我们会根据PlatON网�
 
 ## 资料库
 
-
 ### 节点
 
-- [PlatON验证节点介绍]()
-- [PlatON节点安装部署手册]()
-- [在线MTool使用手册]()
-- [离线MTool使用手册]()
+- [PlatON验证节点介绍](https://github.com/PlatONnetwork/GalaxyRally/blob/master/technologies/PlatON验证节点介绍.md)
+- [PlatON节点安装部署手册](https://github.com/PlatONnetwork/GalaxyRally/blob/master/technologies/PlatON节点安装部署手册.md)
+- [在线MTool使用手册](https://github.com/PlatONnetwork/GalaxyRally/blob/master/technologies/在线MTool使用手册.md)
+- [离线MTool使用手册](https://github.com/PlatONnetwork/GalaxyRally/blob/master/technologies/离线MTool使用手册.md)
 
 ### 钱包
 
-- [ATON使用手册]()
+- [ATON使用手册](https://github.com/PlatONnetwork/GalaxyRally/blob/master/technologies/ATON钱包用户使用手册.md)
 
 ### 治理与升级
 
-- [PlatON链上治理升级指南]()
-- [PlatON链下数据回滚升级指南]()
+- [PlatON链上治理升级指南](https://github.com/PlatONnetwork/GalaxyRally/blob/master/technologies/链上治理升级指南.md)
+- [PlatON链下数据回滚升级指南](https://github.com/PlatONnetwork/GalaxyRally/blob/master/technologies/链下数据回滚升级指南.md)
+- [PIP-1](https://github.com/PlatONnetwork/GalaxyRally/blob/master/PIPs/PIP-1.md)
+- [PIP模板](https://github.com/PlatONnetwork/GalaxyRally/tree/master/templates)
 
 ### 开发指南
 
-- [JAVA SDK]()
-- [JS SDK]()
-- [JSON RPC]() 
+- [JAVA SDK](https://github.com/PlatONnetwork/GalaxyRally/blob/master/technologies/Java-SDK.md)
+- [JS SDK](https://github.com/PlatONnetwork/GalaxyRally/blob/master/technologies/JavaScript-SDK.md)
+- [JSON RPC](https://github.com/PlatONnetwork/GalaxyRally/blob/master/technologies/JSONRPC-SDK.md) 
 
 ### 拉力赛FAQ
 
