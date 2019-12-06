@@ -91,5 +91,5 @@ PlatON环银河拉力赛将进行多赛站的比赛。我们会根据PlatON网�
 
 ### 拉力赛FAQ
 
-- [FAQ](https://github.com/PlatONnetwork/GalaxyRally/blob/master/FAQ)
+- [FAQ](https://github.com/PlatONnetwork/GalaxyRally/blob/master/FAQ.md)
 
