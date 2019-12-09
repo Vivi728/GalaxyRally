@@ -6,7 +6,9 @@ PlatON环银河拉力赛是PlatON的第一个Staking大赛，也是主网上线�
 
 ## 活动目的
 
-邀请广大社区加入PlatON生态网络，了解和熟悉PlatON Network 节点运行管理和链上治理，全面模拟主网线上运行的各种情况，为主网上线做充分准备。
+- PlatON主网的安全性、稳定性、可用性、性能在真实运转环境下的验证；
+- 社区合作节点接入主网并参与社区建设的预演；
+- 社区节点、用户参与PlatON治理的预演
 
 ## 比赛时间
 PlatON环银河拉力赛将进行多赛站的比赛。我们会根据PlatON网络测试进展，调整每个赛站的时间和比赛规则，以全面验证PlatON网络的稳定性和安全性。
@@ -22,6 +24,13 @@ PlatON环银河拉力赛将进行多赛站的比赛。我们会根据PlatON网�
 开始时间：计划于北京时间12月7日开始
 
 >注：大赛组委会可能会视情况随时调整比赛内容和时间，最终解释权归大赛组委会所有。
+
+## 如何参加拉力赛？
+1. 填写参赛申请表。
+我们会在收到报名信息后联系您，审核您的资质，并告知您具体参与的时间。某些赛站开始后可能不允许临时加入，敬请理解。
+
+2. 部署PlatON节点
+详细的节点部署流程，请参阅[节点安装部署文档](https://github.com/PlatONnetwork/GalaxyRally/blob/master/technologies/PlatON%E8%8A%82%E7%82%B9%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E6%89%8B%E5%86%8C.md)。
 
 ## 比赛规则和奖励
 1. 参赛节点可通过各种可行策略来提高节点签名率和收益排名以获取积分，同时积极进行各种攻防手段来降低其他节点的排名，保护自身节点稳定。
@@ -40,12 +49,14 @@ PlatON环银河拉力赛将进行多赛站的比赛。我们会根据PlatON网�
 - 积极解答或解决issues
 - 提交Bug
 
+## 更多信息
+
+- [GitHub](https://github.com/PlatONnetwork/GalaxyRally)：您可以在这里找到本次拉力赛的所有文档、SDK、比赛进展公告，及所有的问题讨论。
+
+   * [社区公告](https://github.com/PlatONnetwork/GalaxyRally/tree/master/announcement)
+   * [PIPs](https://github.com/PlatONnetwork/GalaxyRally/tree/master/PIPs)
+   * [文档](https://github.com/PlatONnetwork/GalaxyRally/tree/master/technologies)
  
-
-## 讨论区
-
-如有任何问题，请通过以下渠道向组委会反馈，或向社区提问：
-- [GitHub](https://github.com/PlatONnetwork/GalaxyRally)：您可以在这里找到本次拉力赛的所有相关文档、SDK、比赛进展公告，及所有的问题讨论。
 - Gitter社区
     * [拉力赛讨论](https://gitter.im/PlatON_Network/Rally)
     * [PIP讨论](https://gitter.im/PlatON_Network/PIP)
@@ -69,7 +80,7 @@ PlatON环银河拉力赛将进行多赛站的比赛。我们会根据PlatON网�
 
 - [PlatON链上治理升级指南](https://github.com/PlatONnetwork/GalaxyRally/blob/master/technologies/链上治理升级指南.md)
 - [PlatON链下数据回滚升级指南](https://github.com/PlatONnetwork/GalaxyRally/blob/master/technologies/链下数据回滚升级指南.md)
-- [PIP-1](https://github.com/PlatONnetwork/GalaxyRally/blob/master/PIPs/PIP-1.md)
+- [治理介绍](https://github.com/PlatONnetwork/GalaxyRally/blob/master/PIPs/PIP-1.md)
 - [PIP模板](https://github.com/PlatONnetwork/GalaxyRally/tree/master/templates)
 
 ### 开发指南
@@ -80,5 +91,5 @@ PlatON环银河拉力赛将进行多赛站的比赛。我们会根据PlatON网�
 
 ### 拉力赛FAQ
 
-- [FAQ]()
+- [FAQ](https://github.com/PlatONnetwork/GalaxyRally/blob/master/FAQ.md)
 
