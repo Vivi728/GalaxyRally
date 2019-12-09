@@ -1,14 +1,14 @@
 ---
-PIP:  Draft:减少区块奖励
-Topic: Draft:减少区块奖励
+PIP:  Final:减少区块奖励
+Topic: Final:减少区块奖励
 Author: alliswell
-Status: Draft
+Status: Final
 Type: Upragde
 Description: 现在矿工获得的出块奖励太多了，提议减少1LAT/块
 Created: 2019-12-09
 ---
 
-# PIP-X：减少区块奖励
+# PIP-4：减少区块奖励
 
 ## Upgrade Purpose
 
