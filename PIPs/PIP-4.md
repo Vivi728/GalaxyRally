@@ -1,5 +1,5 @@
 ---
-PIP:  Final:减少区块奖励
+PIP: 4
 Topic: Final:减少区块奖励
 Author: alliswell
 Status: Final
