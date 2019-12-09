@@ -4,10 +4,6 @@ rem  安装 choco
 where choco 
 if not %ERRORLEVEL% == 0 (
     @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))"
-    if not %ERRORLEVEL% == 0 (
-        echo install choco failed!!!
-        goto fail
-    )
     call RefreshEnv.cmd
 )
 
