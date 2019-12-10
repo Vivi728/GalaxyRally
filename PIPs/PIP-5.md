@@ -16,7 +16,7 @@ Created: 2019-12-10
 
 ## New Function
 
-发现系统存在严重问题,回滚至原来版本
+发现系统存在严重问题,需要升级到最新的版本0.9.0
 
 ## Optimizing function
 
