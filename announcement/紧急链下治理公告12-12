@@ -1,0 +1,31 @@
+# 紧急链下治理升级公告
+
+## 升级详情：
+
+#### 紧急修复0.9.0版本重启节点后无法启动的bug
+
+#### 目标版本号：0.9.1
+
+## 本次链下升级代码地址：
+
+#### 代码分支：
+
+https://github.com/PlatONnetwork/PlatON-Go/commits/galaxyrally_v0.9.1
+
+#### CommitID：
+
+0xad330d8a5fddf3526a8622dab22454f8861fee968b6482eebbd360c8d15691c3
+
+#### ppa源：
+
+sudo add-apt-repository ppa:ppatwo/platon
+
+#### 安装方式：
+
+sudo apt update
+
+sudo apt install platon0.9.1
+
+
+
+
