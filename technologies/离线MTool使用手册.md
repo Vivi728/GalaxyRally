@@ -331,6 +331,17 @@ copy %MTOOLDIR%\validator\reward_config.json.example %MTOOLDIR%\validator\reward
 }
 ```
 
+- 编辑验证节点配置文件
+
+如果节点启动时，启动参数添加了**--db.nogc**选项，说明节点为归档节点，则可以忽略此步骤；否则为非归档节点，只保存最近100个区块的交易信息，获取奖励明细需要连接到归档节点，目前对外开放的归档节点有： **52.233.38.169:6789**和**13.235.119.163:6789**。需要修改验证节点配置文件validator_config.json中的**nodeAddress**参数，其他参数不变：
+
+```json
+{
+    "nodeRpcPort": "6789", 
+    "nodeAddress": "http://52.233.38.169"
+}
+```
+
 - 执行命令
 
 ```bash
@@ -391,6 +402,17 @@ Delegator,Block reward,Fee reward,Staking reward,Issued reward,Distribute reward
 执行此操作之前，需要进行其他操作，具体可参考[5.5 委托奖励生成报表操作](#55-委托奖励生成报表操作)的**执行启动MTool服务命令**和**编辑委托激励计划配置文件**步骤。
 
 委托激励发放会在奖励分配文件的基础上回填交易hash和交易状态，生成**奖励分配结果报表**。生成的文件在：C:\tools\mtool\current\reward_data\VerifierName\目录下。其中VerifierName为验证人的名称。
+
+- 编辑验证节点配置文件
+
+如果节点启动时，启动参数添加了**--db.nogc**选项，说明节点为归档节点，则可以忽略此步骤；否则为非归档节点，只保存最近100个区块的交易信息，获取奖励明细需要连接到归档节点，目前对外开放的归档节点有： **52.233.38.169:6789**和**13.235.119.163:6789**。需要修改验证节点配置文件validator_config.json中的**nodeAddress**参数，其他参数不变：
+
+```json
+{
+    "nodeRpcPort": "6789", 
+    "nodeAddress": "http://52.233.38.169"
+}
+```
 
 - 执行命令
 
