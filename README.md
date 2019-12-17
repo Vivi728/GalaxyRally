@@ -15,13 +15,10 @@ PlatON环银河拉力赛将进行多赛站的比赛。我们会根据PlatON网�
 每个赛站预计持续1-2周，具体开始和结束时间我们将至少提前1天通知社区。
 
 ### 赛站1
-开始时间：计划于北京时间11月15日开始部署底层链，稍后我们会在Gitlab和Gitter发公告告知社区部署节点。
+开始时间：计划于北京时间【2019年12月18日】开始部署底层链，稍后我们会在GitHub和Gitter上的GalaxyRally板块发布公告告知社区部署节点。
 
 ### 赛站2
-开始时间：计划于北京时间11月25日开始
-
-### 赛站3
-开始时间：计划于北京时间12月7日开始
+开始时间：计划于北京时间【2020年1月6日】开始部署底层链
 
 >注：大赛组委会可能会视情况随时调整比赛内容和时间，最终解释权归大赛组委会所有。
 
@@ -30,10 +27,17 @@ PlatON环银河拉力赛将进行多赛站的比赛。我们会根据PlatON网�
 我们会在收到报名信息后联系您，审核您的资质，并告知您具体参与的时间。某些赛站开始后可能不允许临时加入，敬请理解。
 
 2. 部署PlatON节点
-详细的节点部署流程，请参阅[节点安装部署文档](https://github.com/PlatONnetwork/GalaxyRally/blob/master/technologies/PlatON%E8%8A%82%E7%82%B9%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E6%89%8B%E5%86%8C.md)。
+服务器准备，请参阅[PlatON验证节点介绍](https://github.com/PlatONnetwork/GalaxyRally/blob/master/technologies/PlatON验证节点介绍.md)。
+节点部署流程，请参阅[节点安装部署文档](https://github.com/PlatONnetwork/GalaxyRally/blob/master/technologies/PlatON%E8%8A%82%E7%82%B9%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E6%89%8B%E5%86%8C.md)。
+
+3. 提交节点信息
+请将以下信息发送到[rally@platon.network](mailto:rally@platon.network):
+节点名称、节点ID、节点IP及端口号、节点质押账户地址、节点收益账户地址、负责人联系电话、负责人GitHub账户名
+
 
 ## 比赛规则和奖励
-1. 参赛节点可通过各种可行策略来提高节点签名率和收益排名以获取积分，同时积极进行各种攻防手段来降低其他节点的排名，保护自身节点稳定。
+
+1. 参赛节点可通过各种可行策略来提高节点收益以获取积分，同时积极进行各种攻防手段来降低其他节点的收益、保证自身节点稳定运行。
 
 2. 参赛节点可完成指定的任务来获取积分。各赛站的任务可能有所不同，我们会在赛站开始前向社区公布。以下任务形式的一些举例：
 
@@ -92,4 +96,3 @@ PlatON环银河拉力赛将进行多赛站的比赛。我们会根据PlatON网�
 ### 拉力赛FAQ
 
 - [FAQ](https://github.com/PlatONnetwork/GalaxyRally/blob/master/FAQ.md)
-
