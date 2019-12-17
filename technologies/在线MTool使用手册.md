@@ -31,7 +31,7 @@ iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.p
 
 请输入：y，并按回车键结束。
 
-**step2. **浏览器复制链接 <https://7w6qnuo9se.s3.eu-central-1.amazonaws.com/opensource/scripts/mtool_install.bat> 下载脚本。
+**step2. ** 浏览器复制链接 <https://7w6qnuo9se.s3.eu-central-1.amazonaws.com/opensource/scripts/mtool_install.bat> 或者 <http://47.91.153.183/opensource/scripts/mtool_install.bat> 下载脚本。
 
 **step3.** 鼠标右键点击 mtool_install.bat， 选择以管理员身份运行
 
@@ -71,13 +71,14 @@ PlatON中，参与验证节点进行出块要创建两个钱包。如果已经�
 
 ### 3.2 配置验证节点信息
 
-**step1.** 浏览器复制链接 <https://7w6qnuo9se.s3.eu-central-1.amazonaws.com/opensource/scripts/validator_conf.bat> 下载脚本
+**step1.** 浏览器复制链接 <https://7w6qnuo9se.s3.eu-central-1.amazonaws.com/opensource/scripts/validator_conf.bat> 或者 <http://47.91.153.183/opensource/scripts/validator_conf.bat> 下载脚本
 
 **step2.** 鼠标右键点击 validator_conf.bat， 选择以管理员身份运行
 
 > 注意
 >
 > - 提示 `Please enter the platon node IP address:` 时，请输入 PlatON 节点服务器 ip 地址。
+> - 提示 `Please enter the platon chain id:` 时，请输入链ID。
 > - 提示 `Enter your name:` 时，请输入配置 PlatON节点 nginx 时输入的用户名。
 > - 提示 `Enter your password:` 时，请输入配置 PlatON节点 nginx 时输入的密码。
 > - 提示 `Enter your platon node name:` 时，请输入 PlatON 节点的名称。

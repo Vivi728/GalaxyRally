@@ -10,7 +10,7 @@ if not %ERRORLEVEL% == 0 (
 rem 安装 mtool
 where mtool-client.bat 
 if NOT %ERRORLEVEL% == 0 (
-    choco install -y platon_mtool_all --version=0.7.4
+    choco install -y platon_mtool_all --version=0.7.4.1
     setx "MTOOLDIR"  "C:\tools\mtool\current"
     call RefreshEnv.cmd
 ) else (
