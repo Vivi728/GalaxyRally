@@ -35,17 +35,19 @@ PlatON环银河拉力赛将进行多赛站的比赛，每个赛站预计持续2-
 - 积极解答或解决issues
 - 提交Bug
 
-
 ## 谁能够参加拉力赛？
 成为PlatON验证节点有硬件环境、软件环境、运营能力等要求，具体要求请参见：[节点介绍文档](https://github.com/PlatONnetwork/GalaxyRally/blob/master/technologies/PlatON%E9%AA%8C%E8%AF%81%E8%8A%82%E7%82%B9%E4%BB%8B%E7%BB%8D.md)。
 
 对于提交了申请并满足要求的参赛申请者，我们会邀请您参加比赛。
 
 ## 拉力赛什么时候开始？
-拉力赛将于2019年12月下旬开始，直到新贝莱世界测试网络的稳定性和安全性充分验证后结束，我们会至少提前5天通知社区每个赛站的开始和结束时间。
+拉力赛将于2019年12月下旬开始，直到新贝莱世界测试网络的稳定性和安全性充分验证后结束，我们会至少提前2天通知社区每个赛站的开始和结束时间。
 
 ## 参加拉力赛所需要的硬件条件是什么样的？
 节点配置建议请参见：[节点介绍文档](https://github.com/PlatONnetwork/GalaxyRally/blob/master/technologies/PlatON%E9%AA%8C%E8%AF%81%E8%8A%82%E7%82%B9%E4%BB%8B%E7%BB%8D.md)
+
+## 初始质押的Energon如何获取？
+对于已经通过资质审核、并被邀请参赛的节点，请在节点部署完成后，将节点信息发送到[rally@platon.network](mailto:rally@platon.network)，我们将会向您的节点质押账户转账，作为初始质押的Energon。
 
 ## 我可以从哪得到更多信息和支持？
 - [GitHub](https://github.com/PlatONnetwork/GalaxyRally)：您可以在这里找到本次拉力赛的所有文档、SDK、比赛进展公告，及所有的问题讨论。
@@ -58,7 +60,4 @@ PlatON环银河拉力赛将进行多赛站的比赛，每个赛站预计持续2-
     * [拉力赛讨论](https://gitter.im/PlatON_Network/Rally)
     * [PIP讨论](https://gitter.im/PlatON_Network/PIP)
 - 拉力赛支持邮箱：[rally@platon.network](mailto:rally@platon.network)
-
-
-
 
