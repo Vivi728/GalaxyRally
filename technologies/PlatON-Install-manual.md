@@ -152,7 +152,7 @@ Execution policies help you prevent execution of untrusted scripts. Changing exe
 ```
 Please enter: y and press Enter to end.
 
-**step2.** Browser copy link <https://7w6qnuo9se.s3.eu-central-1.amazonaws.com/opensource/scripts/mtool_install.bat> or <http://47.91.153.183/opensource/scripts /mtool_install.bat> Download script
+**step2.** Browser copy link <https://7w6qnuo9se.s3.eu-central-1.amazonaws.com/opensource/scripts/mtool_install.bat> or <http://47.91.153.183/opensource/scripts/mtool_install.bat> Download script
 
 **step3.** Right-click mtool_install.bat and select Run as administrator
 
@@ -202,7 +202,7 @@ In PlatON, two wallets are created to participate in the verification node for b
 > - When prompted `Enter your platon node description:`, enter the PlatON node description.
 > - When the prompt "validator conf success" is displayed, it means that the script has been executed successfully. If the script is not executed successfully, please contact our official customer contact to feedback specific problems.
 > - When prompting `Please press any key to continue ... ', please press Enter to close the current cmd window.
->   -Please go to `C: \ tools \ mtool \ current \ validator` directory and check the validator_config.json content.
+> - Please go to `C: \ tools \ mtool \ current \ validator` directory and check the validator_config.json content.
 
 ### 2.6 Apply for pledged funds
 
@@ -224,14 +224,14 @@ Applicant / Applicant Organization / Institution: {XXX}
 - port: Node port number, the default value is 16789
 - address: Pledge wallet address and income wallet address. After MTool creates the wallet, it can be obtained in the wallet file. The address in the wallet file plus 0x is a valid address.
 
-After the application is submitted, please wait patiently. You can enter the pledge account address in the search box on the main page of PlatON's official blockchain browser [PlatScan] (https://platscan.platon.network) to confirm whether the officially issued token has arrived.
+After the application is submitted, please wait patiently. You can enter the pledge account address in the search box on the main page of PlatON's official blockchain browser [PlatScan](https://platscan.platon.network) to confirm whether the officially issued token has arrived.
 
 ### 2.7 Verify node pledge
 
 Use node tool MTool to perform node pledge and delegation. For capable developers, you can develop your own node tools based on the Java SDK and Javascript SDK. Please refer to the documentation for SDK.
 
--[Java-SDK] (./ Java-SDK.md)
--[JavaScript-API] (./ JavaScript-API.md)
+-[Java-SDK] (./Java-SDK-en.md)
+-[JavaScript-SDK] (./JavaScript-SDK-en.md)
 
 After the application of the pledged funds is received, ensure that the balance of the pledged account is sufficient, and replace {Pledged Amount} according to the user's situation. The minimum threshold for pledge is 1 million LAT.
 
@@ -260,7 +260,7 @@ When the data of the verifier node is inconsistent and the chain cannot run norm
 
 **For real-time and security reasons, it is recommended that conditional nodes build backup nodes by themselves. Data backup configuration steps are as follows:**
 
-**step1.** Install another backup node according to [node installation deployment] (# 1-node installation deployment)
+**step1.** Install another backup node according to [node installation deployment](# 1-node installation deployment)
 
 **step2.** Download the timing_backup.sh script as a non-root account
 
@@ -284,8 +284,8 @@ chmod + x timing_backup.sh && ./timing_backup.sh
 >
 > - When prompted for [sudo] password for`, enter the current account password.
 > - When the prompt `add backup_task.sh to crontab succeed` is displayed, it means that the configuration database backup task is successful. If it is not configured successfully, please contact our official customer contact to feedback specific problems.
-> - `crontab -l` shows that there are` 0 0 * * * $ {HOME} / platon-node / backup_task.sh` fields, where `$ {HOME}` is replaced with the user's root directory, indicating success.
-> - The database backup scheduled task is executed daily at 0 o'clock, and the backup file is generated in the `$ {HOME} / platon-node / data` directory.
+> - `crontab -l` shows that there are` 0 0 * * * ${HOME}/platon-node/backup_task.sh` fields, where `$ {HOME}` is replaced with the user's root directory, indicating success.
+> - The database backup scheduled task is executed daily at 0 o'clock, and the backup file is generated in the `$ {HOME}/platon-node/data` directory.
 
 ## 4. Emergency Management
 
