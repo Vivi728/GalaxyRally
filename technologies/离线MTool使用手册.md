@@ -15,7 +15,7 @@
 
 如果已经安装在线MTool，可以忽略此步骤。在线MTool安装步骤如下：
 
-- **step1. **浏览器复制链接 <https://7w6qnuo9se.s3.eu-central-1.amazonaws.com/opensource/scripts/mtool_install.bat> 下载脚本。
+- **step1. **浏览器复制链接 <https://7w6qnuo9se.s3.eu-central-1.amazonaws.com/opensource/scripts/mtool_install.bat> 或者 <http://47.91.153.183/opensource/scripts/mtool_install.bat> 下载脚本。
 
 - **step2.** 鼠标右键点击 mtool_install.bat， 选择以管理员身份运行
 
@@ -30,7 +30,7 @@
 
 - 下载MTool安装包
 
-  在有网络的机器上，复制链接<https://7w6qnuo9se.s3.eu-central-1.amazonaws.com/mtool/0.7.3/mtool-setup.exe>到浏览器下载MTool安装包。
+  在有网络的机器上，复制链接<https://7w6qnuo9se.s3.eu-central-1.amazonaws.com/mtool/mtool-setup/0.7.4.1/mtool-setup.exe>或者 <http://47.91.153.183/mtool/mtool-setup/0.7.4.1/mtool-setup.exe> 到浏览器下载MTool安装包。
 
 - 通过安全存储介质（移动U盘或者移动硬盘）将安装文件mtool-setup.exe转到**离线机器**下
 
@@ -105,7 +105,7 @@ wallet created at: keystore/reward_observed.json
 
 如果已经配置验证节点信息，忽略此步骤。在**`在线机器`**上执行以下步骤生成验证节点配置信息：
 
-- step1. 浏览器复制链接 <https://7w6qnuo9se.s3.eu-central-1.amazonaws.com/opensource/scripts/validator_conf.bat> 下载脚本。
+- step1. 浏览器复制链接 <https://7w6qnuo9se.s3.eu-central-1.amazonaws.com/opensource/scripts/validator_conf.bat>  或者 <http://47.91.153.183/opensource/scripts/validator_conf.bat> 下载脚本。
 
 - step2. 鼠标右键点击 validator_conf.bat， 选择以管理员身份运行，结果如下：
 
