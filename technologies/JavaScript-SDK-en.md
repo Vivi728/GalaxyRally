@@ -1833,7 +1833,7 @@ Return: List
 | Name   | Type    | Description                                    |
 | ------ | ------- | ---------------------------------------------- |
 | NodeId | 64bytes | Pledged Node Id(also called Candidate Node Id) |
-| StakingAddress | 20bytes | The account used when initiating the pledge(the subsequent operation of the pledge information can only use this account, when the pledge is cancelled, von will be returned to the account or the account lock information)|
+| StakingAddress | 20bytes | The account used when initiating the pledge(the subsequent operation of the pledge information can only use this account, when the pledge is cancelled, von will be returned to the account or the account lock information) |
 | BenefitAddress | 20bytes | Profit account for accepting block rewards and pledged rewards |
 | StakingTxIndex | uint32(4bytes) | Transaction index when pledge is initiated |
 | ProgramVersion | uint32 | The real version number of the PlatON process of the pledged node(the interface for obtaining the version number is provided by the governance) |
