@@ -2,7 +2,7 @@
 
 Depending on the build tool, add related dependencies to your project using:
 
--Use requires jdk1.8 or above.
+- Use requires jdk1.8 or above.
 
 ## maven
 
@@ -45,8 +45,8 @@ compile "com.platon.client: core: 0.7.3.4"
 
 Encapsulates some APIs for developers to use, including the following two parts:
 
--System contracts: including contract interfaces related to economic models and governance
--Basic API: including network, transaction, query, node information, economic model parameter configuration and other related interfaces
+- System contracts: including contract interfaces related to economic models and governance
+- Basic API: including network, transaction, query, node information, economic model parameter configuration and other related interfaces
 
 ## System contract
 
@@ -284,9 +284,7 @@ BaseResponse<Node> baseRespons
 
   -  BigInteger: StakingTxIndex transaction index when pledge is initiated
 
-  -  BigInteger: Status of the status candidate, 0: node is available, 1: node is unavailable, 2: node block rate is low but the removal condition is not met,
-
-    4: The node's von is insufficient to the minimum pledge threshold(only the penultimate bit is 1), 8: the node is reported to be double signed, 16: the node block rate is low and the removal condition is reached(the penultimate bit is 1); : Node initiates cancellation
+  -  BigInteger: Status of the status candidate, 0: node is available, 1: node is unavailable, 2: node block rate is low but the removal condition is not met,4: The node's von is insufficient to the minimum pledge threshold(only the penultimate bit is 1), 8: the node is reported to be double signed, 16: the node block rate is low and the removal condition is reached(the penultimate bit is 1); : Node initiates cancellation
 
   - BigInteger: ValidatorTerm
 
