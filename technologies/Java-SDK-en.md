@@ -1,4 +1,4 @@
-# getting Started
+# Getting Started
 
 Depending on the build tool, add related dependencies to your project using:
 
