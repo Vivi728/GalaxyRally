@@ -88,7 +88,7 @@ StakingContract contract = StakingContract.load(web3j, credentials, chainId)
 BaseRespons
 ```
 
--BaseResponse: General Response Packet
+- BaseResponse: General Response Packet
   - int: Code result identification, 1 is success, 0 is failure
   - String: Data response data
   - String: ErrMsg error message, exists on failure
@@ -140,7 +140,7 @@ StakingAmountType stakingAmountType = StakingAmountType.FREE_AMOUNT_TYPE;
 BaseRespons
 ```
 
--BaseResponse: General Response Packet
+- BaseResponse: General Response Packet
   - int: Code result identification, 1 is success, 0 is failure
   - String: Data response data
   - String: ErrMsg error message, exists on failure
@@ -174,7 +174,7 @@ BaseResponse baseResponse = stakingContract.getUnStakingResult(platonSendTransac
 BaseRespons
 ```
 
--BaseResponse: General Response Packet
+- BaseResponse: General Response Packet
   - int: Code result identification, 1 is success, 0 is failure
   - String: Data response data
   - String: ErrMsg error message, exists on failure
@@ -219,7 +219,7 @@ BaseResponse baseResponse = stakingContract.getUpdateStakingInfoResult(platonSen
 BaseRespons
 ```
 
--BaseResponse: General Response Packet
+- BaseResponse: General Response Packet
   - int: Code result identification, 1 is success, 0 is failure
   - String: Data response data
   - String: ErrMsg error message, exists on failure
@@ -331,7 +331,7 @@ delegateContract contract = DelegateContract.load(web3j, credentials, chainId);
 BaseRespons
 ```
 
--BaseResponse: General Response Packet
+- BaseResponse: General Response Packet
   - int: Code result identification, 1 is success, 0 is failure
   - String: Data response data
   - String: ErrMsg error message, exists on failure
@@ -359,10 +359,10 @@ StakingAmountType stakingAmountType = StakingAmountType.FREE_AMOUNT_TYPE;
 - **return value**
 
 ```
-BaseResponse<List<DelegationIdInfo >> baseRespons
+BaseResponse<List<DelegationIdInfo>> baseRespons
 ```
 
--BaseResponse<List<DelegationIdInfo >>
+- BaseResponse<List<DelegationIdInfo>>
   - int: Code result identification, 1 is success, 0 is failure
   - List<DelegationIdInfo>: List of Data DelegationIdInfo objects
   - String: ErrMsg error message, exists on failure
@@ -374,7 +374,7 @@ BaseResponse<List<DelegationIdInfo >> baseRespons
 - **Java SDK contract use**
 
 ```java
-BaseResponse<List<DelegationIdInfo >> baseResponse = delegateContract.getRelatedListByDelAddr(delegateCredentials.getAddress()). Send();
+BaseResponse<List<DelegationIdInfo>> baseResponse = delegateContract.getRelatedListByDelAddr(delegateCredentials.getAddress()). Send();
 List<DelegationIdInfo> DelegationIdInfoList = baseResponse.data;
 
 ```
@@ -394,7 +394,7 @@ BaseResponse<Delegation>
 
 ```
 
--BaseResponse<Delegation>
+- BaseResponse<Delegation>
   - int: Code result identification, 1 is success, 0 is failure
   - Delegation: Data delegation object data
   - String: ErrMsg error message, exists on failure
@@ -436,7 +436,7 @@ Delegation delegation = baseResponse.data;
 BaseRespons
 ```
 
--BaseResponse: General Response Packet
+- BaseResponse: General Response Packet
   - int: Code result identification, 1 is success, 0 is failure
   - String: Data response data
   - String: ErrMsg error message, exists on failure
@@ -481,10 +481,10 @@ nodeContract contract = NodeContract.load(web3j, credentials, chainId);
 - **return value**
 
 ```
-BaseResponse<List<Node >> baseResponse
+BaseResponse<List<Node>> baseResponse
 ```
 
--BaseResponse<List<Node >>
+- BaseResponse<List<Node >>
   - int: Code result identification, 1 is success, 0 is failure
   - List<Node>: Data nodeList object data
   - String: ErrMsg error message, exists on failure
@@ -530,7 +530,7 @@ BaseResponse<List<Node >> baseResponse
 - **Java SDK contract use**
 
 ```java
-BaseResponse<List<Node >> baseResponse = nodeContract.getVerifierList(). Send();
+BaseResponse<List<Node>> baseResponse = nodeContract.getVerifierList(). Send();
 List<Node> nodeList = baseResponse.data;
 
 ```
@@ -546,11 +546,11 @@ List<Node> nodeList = baseResponse.data;
 - **return value**
 
 ```
-BaseResponse<List<Node >> baseResponse
+BaseResponse<List<Node>> baseResponse
 
 ```
 
--BaseResponse<List<Node >>
+- BaseResponse<List<Node >>
   - int: Code result identification, 1 is success, 0 is failure
   - List<Node>: Data nodeList object data
   - String: ErrMsg error message, exists on failure
@@ -594,7 +594,7 @@ BaseResponse<List<Node >> baseResponse
 - **Java SDK contract use**
 
 ```java
-BaseResponse<List<Node >> baseResponse = nodeContract.getValidatorList(). Send();
+BaseResponse<List<Node>> baseResponse = nodeContract.getValidatorList(). Send();
 List<Node> nodeList = baseResponse.data;
 ```
 
@@ -609,10 +609,10 @@ List<Node> nodeList = baseResponse.data;
 - **return value**
 
 ```
-BaseResponse<List<Node >> baseResponse
+BaseResponse<List<Node>> baseResponse
 ```
 
--BaseResponse<List<Node >>
+- BaseResponse<List<Node >>
   - int: Code result identification, 1 is success, 0 is failure
   - List<Node>: Data nodeList object data
   - String: ErrMsg error message, exists on failure
@@ -658,7 +658,7 @@ BaseResponse<List<Node >> baseResponse
 - **Java SDK contract use**
 
 ```java
-BaseResponse<List<Node >> baseResponse = nodeContract.getCandidateList(). Send();
+BaseResponse<List<Node>> baseResponse = nodeContract.getCandidateList(). Send();
 List<Node> nodeList = baseResponse.data;
 ```
 
@@ -706,7 +706,7 @@ ProposalContract contract = ProposalContract.load(web3j, credentials, chainId);
 BaseRespons
 ```
 
--BaseResponse: General Response Packet
+- BaseResponse: General Response Packet
   - int: Code result identification, 1 is success, 0 is failure
   - String: Data response data
   - String: ErrMsg error message, exists on failure
@@ -737,7 +737,7 @@ BaseResponse baseResponse = proposalContract.getSubmitProposalResult(platonSendT
 BaseRespons
 ```
 
--BaseResponse: General Response Packet
+- BaseResponse: General Response Packet
   - int: Code result identification, 1 is success, 0 is failure
   - String: Data response data
   - String: ErrMsg error message, exists on failure
@@ -767,7 +767,7 @@ BaseResponse<Proposal>
 
 ```
 
--BaseResponse<Proposal>
+- BaseResponse<Proposal>
   - int: Code result identification, 1 is success, 0 is failure
   - Proposal: Data Proposal object data
   - String: ErrMsg error message, exists on failure
@@ -805,7 +805,7 @@ Proposal proposal = baseResponse.data;
 BaseResponse<TallyResult>
 ```
 
--BaseResponse<TallyResult>
+- BaseResponse<TallyResult>
   - int: Code result identification, 1 is success, 0 is failure
   - TallyResult: Data TallyResult object data
   - String: ErrMsg error message, exists on failure
@@ -840,7 +840,7 @@ TallyResult tallyResult = baseResponse.data;
 BaseResponse<List<Proposal >>
 ```
 
--BaseResponse<List<Proposal >>
+- BaseResponse<List<Proposal >>
   - int: Code result identification, 1 is success, 0 is failure
   - List<Proposal>: Data ProposalList object data
   - String: ErrMsg error message, exists on failure
@@ -859,7 +859,7 @@ BaseResponse<List<Proposal >>
 - **Contract use**
 
 ```java
-BaseResponse<List<Proposal >> baseResponse = proposalContract.getProposalList(). Send();
+BaseResponse<List<Proposal>> baseResponse = proposalContract.getProposalList(). Send();
 List<Proposal> proposalList = baseResponse.data;
 ```
 
@@ -877,7 +877,7 @@ BaseRespons
 
 ```
 
--BaseResponse: General Response Packet
+- BaseResponse: General Response Packet
   - int: Code result identification, 1 is success, 0 is failure
   - String: Data response data
   - String: ErrMsg error message, exists on failure
@@ -906,7 +906,7 @@ BaseRespons
 
 ```
 
--BaseResponse: General Response Packet
+- BaseResponse: General Response Packet
   - int: Code result identification, 1 is success, 0 is failure
   - String: Data response data
   - String: ErrMsg error message, exists on failure
@@ -950,7 +950,7 @@ BaseRespons
 
 ```
 
--BaseResponse: General Response Packet
+- BaseResponse: General Response Packet
   - int: Code result identification, 1 is success, 0 is failure
   - String: Data response data
   - String: ErrMsg error message, exists on failure
@@ -979,7 +979,7 @@ BaseRespons
 
 ```
 
--BaseResponse: General Response Packet
+- BaseResponse: General Response Packet
   - int: Code result identification, 1 is success, 0 is failure
   - String: Data response data
   - String: ErrMsg error message, exists on failure
@@ -1025,7 +1025,7 @@ BaseResponse
 
 ```
 
--BaseResponse: General Response Packet
+- BaseResponse: General Response Packet
   - int: Code result identification, 1 is success, 0 is failure
   - String: Data response data
   - String: ErrMsg error message, exists on failure
@@ -1053,7 +1053,7 @@ BaseResponse baseResponse = restrictingPlanContract.getCreateRestrictingPlanResu
 BaseResponse<RestrictingItem> baseResponse
 ```
 
--BaseResponse<RestrictingItem> description
+- BaseResponse<RestrictingItem> description
   - int: Code result identification, 1 is success, 0 is failure
   - RestrictingItem: Data RestrictingItem object data
   - String: ErrMsg error message, exists on failure
