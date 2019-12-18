@@ -6,7 +6,7 @@
 
 
 
-## **1.**Browser selection
+## 1. Browser selection
 
 Please use Google Chrome or IE browser (IE 11 or above) to access. Other browsers or lower versions of IE will encounter compatibility issues such as pages not displaying, displaying incompletely, and being unable to click.
 
