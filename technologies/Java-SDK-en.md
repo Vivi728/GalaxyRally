@@ -66,7 +66,7 @@ StakingContract contract = StakingContract.load(web3j, credentials, chainId)
 
 #### Interface Description
 
-#####**StakingReturnTransaction**
+##### **StakingReturnTransaction**
 
 > Node candidate applies for pledge
 
@@ -128,7 +128,7 @@ StakingAmountType stakingAmountType = StakingAmountType.FREE_AMOUNT_TYPE;
         return baseResponse;
 ```
 
-#####**UnStakingReturnTransaction**
+##### **UnStakingReturnTransaction**
 
 > Node revocation pledge(initiate all revocations at one time, multiple accounts)
 
@@ -157,7 +157,7 @@ PlatonSendTransaction platonSendTransaction = stakingContract.unStakingReturnTra
 BaseResponse baseResponse = stakingContract.getUnStakingResult(platonSendTransaction) .send();
 ```
 
-#####**UpdateStakingInfoReturnTransaction**
+##### **UpdateStakingInfoReturnTransaction**
 
 > Modify pledge information
 
@@ -205,7 +205,7 @@ PlatonSendTransaction platonSendTransaction = stakingContract.updateStakingInfoR
 BaseResponse baseResponse = stakingContract.getUpdateStakingInfoResult(platonSendTransaction) .send();
 ```
 
-#####**AddStakingReturnTransaction**
+##### **AddStakingReturnTransaction**
 
 > Increase pledge and increase pledged deposits of pledged nodes
 
@@ -237,7 +237,7 @@ StakingAmountType stakingAmountType = StakingAmountType.FREE_AMOUNT_TYPE;
 BaseResponse baseResponse = stakingContract.getAddStakingResult(platonSendTransaction) .send();
 ```
 
-#####**GetStakingInfo**
+##### **GetStakingInfo**
 
 > Query the pledge information of the current node
 
@@ -317,7 +317,7 @@ delegateContract contract = DelegateContract.load(web3j, credentials, chainId);
 
 #### Interface Description
 
-#####**DelegateReturnTransaction**
+##### **DelegateReturnTransaction**
 
 > Initiate a commission, commission a node that has been pledged, and commission a node to increase the weight of the node to obtain revenue
 
@@ -350,7 +350,7 @@ StakingAmountType stakingAmountType = StakingAmountType.FREE_AMOUNT_TYPE;
         BaseResponse baseResponse = delegateContract.getDelegateResult(platonSendTransaction) .send();
 ```
 
-#####**GetRelatedListByDelAddr**
+##### **GetRelatedListByDelAddr**
 
 > Query the NodeID and Pledged Id of the node entrusted by the current account address
 
@@ -379,7 +379,7 @@ List<DelegationIdInfo> DelegationIdInfoList = baseResponse.data;
 
 ```
 
-#####**GetDelegateInfo**
+##### **GetDelegateInfo**
 
 > Query current single commission information
 
@@ -422,7 +422,7 @@ BaseResponse<Delegation> baseResponse = delegateContract.getDelegateInfo(nodeId,
 Delegation delegation = baseResponse.data;
 ```
 
-#####**UnDelegateReturnTransaction**
+##### **UnDelegateReturnTransaction**
 
 > Reduction / revocation of commission(all reductions are revocation)
 
@@ -470,7 +470,7 @@ nodeContract contract = NodeContract.load(web3j, credentials, chainId);
 
 #### Interface Description
 
-#####**GetVerifierList**
+##### **GetVerifierList**
 
 > Query the queue of validators in the current settlement cycle
 
@@ -535,7 +535,7 @@ List<Node> nodeList = baseResponse.data;
 
 ```
 
-#####**GetValidatorList**
+##### **GetValidatorList**
 
 > Query the list of validators in the current consensus cycle
 
@@ -598,7 +598,7 @@ BaseResponse<List<Node >> baseResponse = nodeContract.getValidatorList(). Send()
 List<Node> nodeList = baseResponse.data;
 ```
 
-#####**GetCandidateList**
+##### **GetCandidateList**
 
 > Query all real-time candidate lists
 
@@ -679,7 +679,7 @@ ProposalContract contract = ProposalContract.load(web3j, credentials, chainId);
 
 #### Interface Description
 
-#####**SubmitProposalReturnTransaction**
+##### **SubmitProposalReturnTransaction**
 
 > Submit a Proposal
 
@@ -722,7 +722,7 @@ PlatonSendTransaction platonSendTransaction = proposalContract.submitProposalRet
 BaseResponse baseResponse = proposalContract.getSubmitProposalResult(platonSendTransaction, FunctionType.SUBMIT_TEXT_FUNC_TYPE) .send();
 ```
 
-#####**VoteReturnTransaction**
+##### **VoteReturnTransaction**
 
 > Vote on proposals
 
@@ -754,7 +754,7 @@ BaseResponse baseResponse = voteInfo.getVoteContract(). GetVoteResult(platonSend
 
 ```
 
-#####**GetProposal**
+##### **GetProposal**
 
 > Query Proposal
 
@@ -793,7 +793,7 @@ Proposal proposal = baseResponse.data;
 
 ```
 
-#####**GetTallyResult**
+##### **GetTallyResult**
 
 > Query Proposal Results
 
@@ -826,7 +826,7 @@ BaseResponse<TallyResult> baseResponse = proposalContract.getTallyResult(proposa
 TallyResult tallyResult = baseResponse.data;
 ```
 
-#####**GetProposalList**
+##### **GetProposalList**
 
 > Query proposal list
 
@@ -863,7 +863,7 @@ BaseResponse<List<Proposal >> baseResponse = proposalContract.getProposalList().
 List<Proposal> proposalList = baseResponse.data;
 ```
 
-#####**DeclareVersionReturnTransaction**
+##### **DeclareVersionReturnTransaction**
 
 > Release statement
 
@@ -891,7 +891,7 @@ BaseResponse baseResponse = proposalContract.getDeclareVersionResult(platonSendT
 
 ```
 
-#####**GetActiveVersion**
+##### **GetActiveVersion**
 
 > Query node chain effective version
 
@@ -936,7 +936,7 @@ SlashContract contract = SlashContract.load(web3j, credentials, chainId);
 
 #### Interface Description
 
-#####**ReportDoubleSignReturnTransaction**
+##### **ReportDoubleSignReturnTransaction**
 
 > Submit a Proposal
 
@@ -964,7 +964,7 @@ BaseResponse baseResponse = slashContract.getReportDoubleSignResult(platonSendTr
 
 ```
 
-#####**CheckDoubleSign**
+##### **CheckDoubleSign**
 
 > Query whether a node has been reported as oversigned
 
@@ -1009,7 +1009,7 @@ RestrictingPlanContract contract = RestrictingPlanContract.load(web3j, credentia
 
 #### Interface Description
 
-#####**CreateRestrictingPlan**
+##### **CreateRestrictingPlan**
 
 > Create Lockup Plan
 
@@ -1041,7 +1041,7 @@ BaseResponse baseResponse = restrictingPlanContract.getCreateRestrictingPlanResu
 
 ```
 
-#####**GetRestrictingInfo**
+##### **GetRestrictingInfo**
 
 > Get Locked Up Plan
 
