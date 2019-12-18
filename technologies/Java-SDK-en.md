@@ -71,17 +71,17 @@ StakingContract contract = StakingContract.load(web3j, credentials, chainId)
 > Node candidate applies for pledge
 
 - **Introduction**
-  -String: nodeId node id, hexadecimal format, starting with 0x
-  -BigInteger: amount of von pledged, the pledged amount must be greater than or equal to 1,000,000 LAT
-  -StakingAmountType: stakingAmountType, enumeration, FREE_AMOUNT_TYPE means use the free amount of the account, RESTRICTING_AMOUNT_TYPE means use the amount of the lock to make a pledge
-  -String: benefitAddress revenue account
-  -String: nodeName The name of the node being pledged
-  -String: externalId External Id(the length of the Id described by the third-party pull node), currently the keybase account public key
-  -String: The third-party homepage of the webSite node(the length is limited, indicating the homepage of the node)
-  -String: description of the details node(there is a length limitation, indicating the description of the node)
-  -ProgramVersion: the real version of the processVersion program, governing rpc acquisition
-  -String: blsPubKey bls public key
-  -String: Proof of blsProof bls
+  - String: nodeId node id, hexadecimal format, starting with 0x
+  - BigInteger: amount of von pledged, the pledged amount must be greater than or equal to 1,000,000 LAT
+  - StakingAmountType: stakingAmountType, enumeration, FREE_AMOUNT_TYPE means use the free amount of the account, RESTRICTING_AMOUNT_TYPE means use the amount of the lock to make a pledge
+  - String: benefitAddress revenue account
+  - String: nodeName The name of the node being pledged
+  - String: externalId External Id(the length of the Id described by the third-party pull node), currently the keybase account public key
+  - String: The third-party homepage of the webSite node(the length is limited, indicating the homepage of the node)
+  - String: description of the details node(there is a length limitation, indicating the description of the node)
+  - ProgramVersion: the real version of the processVersion program, governing rpc acquisition
+  - String: blsPubKey bls public key
+  - String: Proof of blsProof bls
 - **return value**
 
 ```
@@ -89,9 +89,9 @@ BaseRespons
 ```
 
 -BaseResponse: General Response Packet
-  -int: Code result identification, 1 is success, 0 is failure
-  -String: Data response data
-  -String: ErrMsg error message, exists on failure
+  - int: Code result identification, 1 is success, 0 is failure
+  - String: Data response data
+  - String: ErrMsg error message, exists on failure
 
 - **Contract use**
 
@@ -133,7 +133,7 @@ StakingAmountType stakingAmountType = StakingAmountType.FREE_AMOUNT_TYPE;
 > Node revocation pledge(initiate all revocations at one time, multiple accounts)
 
 - **Introduction**
-  -String: nodeId node id, hexadecimal format, starting with 0x
+  - String: nodeId node id, hexadecimal format, starting with 0x
 - **return value**
 
 ```
@@ -141,9 +141,9 @@ BaseRespons
 ```
 
 -BaseResponse: General Response Packet
-  -int: Code result identification, 1 is success, 0 is failure
-  -String: Data response data
-  -String: ErrMsg error message, exists on failure
+  - int: Code result identification, 1 is success, 0 is failure
+  - String: Data response data
+  - String: ErrMsg error message, exists on failure
 
 - **Contract use**
 
@@ -162,12 +162,12 @@ BaseResponse baseResponse = stakingContract.getUnStakingResult(platonSendTransac
 > Modify pledge information
 
 - **Introduction**
-  -String: nodeId node id, hexadecimal format, starting with 0x
-  -String: externalId External Id(with a length limit, the ID described by the third-party pull node), currently the keybase account public key
-  -String: benefitAddress revenue account
-  -String: nodeName The name of the node being pledged
-  -String: the third-party homepage of the webSite node
-  -String: description of the details node(there is a length limitation, indicating the description of the node)
+  - String: nodeId node id, hexadecimal format, starting with 0x
+  - String: externalId External Id(with a length limit, the ID described by the third-party pull node), currently the keybase account public key
+  - String: benefitAddress revenue account
+  - String: nodeName The name of the node being pledged
+  - String: the third-party homepage of the webSite node
+  - String: description of the details node(there is a length limitation, indicating the description of the node)
 - **return value**
 
 ```
@@ -175,9 +175,9 @@ BaseRespons
 ```
 
 -BaseResponse: General Response Packet
-  -int: Code result identification, 1 is success, 0 is failure
-  -String: Data response data
-  -String: ErrMsg error message, exists on failure
+  - int: Code result identification, 1 is success, 0 is failure
+  - String: Data response data
+  - String: ErrMsg error message, exists on failure
 
 - **Contract use**
 
@@ -210,9 +210,9 @@ BaseResponse baseResponse = stakingContract.getUpdateStakingInfoResult(platonSen
 > Increase pledge and increase pledged deposits of pledged nodes
 
 - **Introduction**
-  -String: nodeId node id, hexadecimal format, starting with 0x
-  -StakingAmountType: stakingAmountType, enumeration, FREE_AMOUNT_TYPE means use the free amount of the account, RESTRICTING_AMOUNT_TYPE means use the amount of the lock to make a pledge
-  -BigInteger: addStakingAmount
+  - String: nodeId node id, hexadecimal format, starting with 0x
+  - StakingAmountType: stakingAmountType, enumeration, FREE_AMOUNT_TYPE means use the free amount of the account, RESTRICTING_AMOUNT_TYPE means use the amount of the lock to make a pledge
+  - BigInteger: addStakingAmount
 - **return value**
 
 ```
@@ -220,9 +220,9 @@ BaseRespons
 ```
 
 -BaseResponse: General Response Packet
-  -int: Code result identification, 1 is success, 0 is failure
-  -String: Data response data
-  -String: ErrMsg error message, exists on failure
+  - int: Code result identification, 1 is success, 0 is failure
+  - String: Data response data
+  - String: ErrMsg error message, exists on failure
 
 - **Contract use**
 
@@ -242,7 +242,7 @@ BaseResponse baseResponse = stakingContract.getAddStakingResult(platonSendTransa
 > Query the pledge information of the current node
 
 - **Introduction**
-  -String: nodeId node id, hexadecimal format, starting with 0x
+  - String: nodeId node id, hexadecimal format, starting with 0x
 - **return value**
 
 ```
@@ -250,47 +250,47 @@ BaseResponse<Node> baseRespons
 ```
 
 - BaseResponse<Node> description
-  - int: Code result flag, 1 is success, 0 is failure
-  - Node: Data Node object data
-  - String: ErrMsg error message, exists on failure
+  -  int: Code result flag, 1 is success, 0 is failure
+  -  Node: Data Node object data
+  -  String: ErrMsg error message, exists on failure
 
 - **Node**: object that holds the current node pledge information
 
-  - String: BenefitAddress is used to accept the block reward and pledged reward income account
+  -  String: BenefitAddress is used to accept the block reward and pledged reward income account
 
-  - String: The description of the Details node(the length is limited, indicating the description of the node)
+  -  String: The description of the Details node(the length is limited, indicating the description of the node)
 
-  - String: NodeId The node Id of the pledge(also called the candidate's node Id)
+  -  String: NodeId The node Id of the pledge(also called the candidate's node Id)
  
-  - String: NodeName The name of the node being pledged(the length is limited, indicating the name of the node)
+  -  String: NodeName The name of the node being pledged(the length is limited, indicating the name of the node)
 
-  - BigInteger: ProgramVersion The real version number of the PlatON process of the pledged node(the interface for obtaining the version number is provided by the governance)
+  -  BigInteger: ProgramVersion The real version number of the PlatON process of the pledged node(the interface for obtaining the version number is provided by the governance)
 
-  - BigInteger: Released von who initiated a free amount locked period pledged account
+  -  BigInteger: Released von who initiated a free amount locked period pledged account
 
-  - BigInteger: ReleasedHes initiated the free amount of the hesitation period of the pledged account
+  -  BigInteger: ReleasedHes initiated the free amount of the hesitation period of the pledged account
 
-  - BigInteger: RestrictingPlan initiates the lock-up period of the locked account amount of the pledged account.
+  -  BigInteger: RestrictingPlan initiates the lock-up period of the locked account amount of the pledged account.
 
-  - BigInteger: RestrictingPlanHes initiated the hedging period of the locked amount of the pledged account
+  -  BigInteger: RestrictingPlanHes initiated the hedging period of the locked amount of the pledged account
 
-  - BigInteger: Shares the current candidate's total pledge plus the number of entrusted vons
+  -  BigInteger: Shares the current candidate's total pledge plus the number of entrusted vons
 
-  - String: StakingAddress The account used when initiating the pledge(when the pledge is cancelled, von will be returned to the account or the account's lock information)
+  -  String: StakingAddress The account used when initiating the pledge(when the pledge is cancelled, von will be returned to the account or the account's lock information)
 
-  - BigInteger: block height when StakingBlockNum initiated pledge
+  -  BigInteger: block height when StakingBlockNum initiated pledge
 
-  - BigInteger: StakingEpoch's current settlement cycle when the pledge amount is changed
+  -  BigInteger: StakingEpoch's current settlement cycle when the pledge amount is changed
 
-  - BigInteger: StakingTxIndex transaction index when pledge is initiated
+  -  BigInteger: StakingTxIndex transaction index when pledge is initiated
 
-  - BigInteger: Status of the status candidate, 0: node is available, 1: node is unavailable, 2: node block rate is low but the removal condition is not met,
+  -  BigInteger: Status of the status candidate, 0: node is available, 1: node is unavailable, 2: node block rate is low but the removal condition is not met,
 
     4: The node's von is insufficient to the minimum pledge threshold(only the penultimate bit is 1), 8: the node is reported to be double signed, 16: the node block rate is low and the removal condition is reached(the penultimate bit is 1); : Node initiates cancellation
 
-  -BigInteger: ValidatorTerm
+  - BigInteger: ValidatorTerm
 
-  -String: The third-party homepage of the Website node(the length of the node is the homepage of the node)
+  - String: The third-party homepage of the Website node(the length of the node is the homepage of the node)
 
 - **Java SDK contract use**
 
@@ -322,9 +322,9 @@ delegateContract contract = DelegateContract.load(web3j, credentials, chainId);
 > Initiate a commission, commission a node that has been pledged, and commission a node to increase the weight of the node to obtain revenue
 
 - **Introduction**
-  -String: nodeId node id, hexadecimal format, starting with 0x
-  -StakingAmountType: stakingAmountType, enumeration, FREE_AMOUNT_TYPE means use the free amount of the account, RESTRICTING_AMOUNT_TYPE means use the amount of the lock to make a pledge
-  -BigInteger: amount of amount commissioned(based on the smallest unit, 1LAT = 10**18 von)
+  - String: nodeId node id, hexadecimal format, starting with 0x
+  - StakingAmountType: stakingAmountType, enumeration, FREE_AMOUNT_TYPE means use the free amount of the account, RESTRICTING_AMOUNT_TYPE means use the amount of the lock to make a pledge
+  - BigInteger: amount of amount commissioned(based on the smallest unit, 1LAT = 10**18 von)
 - **return value**
 
 ```
@@ -332,9 +332,9 @@ BaseRespons
 ```
 
 -BaseResponse: General Response Packet
-  -int: Code result identification, 1 is success, 0 is failure
-  -String: Data response data
-  -String: ErrMsg error message, exists on failure
+  - int: Code result identification, 1 is success, 0 is failure
+  - String: Data response data
+  - String: ErrMsg error message, exists on failure
 
 - **Contract use**
 
@@ -355,7 +355,7 @@ StakingAmountType stakingAmountType = StakingAmountType.FREE_AMOUNT_TYPE;
 > Query the NodeID and Pledged Id of the node entrusted by the current account address
 
 - **Introduction**
-  -String: address Account address of the principal
+  - String: address Account address of the principal
 - **return value**
 
 ```
@@ -363,14 +363,14 @@ BaseResponse<List<DelegationIdInfo >> baseRespons
 ```
 
 -BaseResponse<List<DelegationIdInfo >>
-  -int: Code result identification, 1 is success, 0 is failure
-  -List<DelegationIdInfo>: List of Data DelegationIdInfo objects
-  -String: ErrMsg error message, exists on failure
+  - int: Code result identification, 1 is success, 0 is failure
+  - List<DelegationIdInfo>: List of Data DelegationIdInfo objects
+  - String: ErrMsg error message, exists on failure
 
 - **DelegationIdInfo**: An object that stores the NodeID and the height of the pledged block of the node commissioned by the current account address
-  -String: address Account address of the principal
-  -String: NodeId Node Id of the validator
-  -BigInteger: block height when StakingBlockNum initiated pledge
+  - String: address Account address of the principal
+  - String: NodeId Node Id of the validator
+  - BigInteger: block height when StakingBlockNum initiated pledge
 - **Java SDK contract use**
 
 ```java
@@ -384,9 +384,9 @@ List<DelegationIdInfo> DelegationIdInfoList = baseResponse.data;
 > Query current single commission information
 
 - **Introduction**
-  -String: address Account address of the principal
-  -String: nodeId node id, in hexadecimal format, starting with 0x
-  -BigInteger: block height when stakingBlockNum initiated pledge
+  - String: address Account address of the principal
+  - String: nodeId node id, in hexadecimal format, starting with 0x
+  - BigInteger: block height when stakingBlockNum initiated pledge
 - **return value**
 
 ```
@@ -395,20 +395,20 @@ BaseResponse<Delegation>
 ```
 
 -BaseResponse<Delegation>
-  -int: Code result identification, 1 is success, 0 is failure
-  -Delegation: Data delegation object data
-  -String: ErrMsg error message, exists on failure
+  - int: Code result identification, 1 is success, 0 is failure
+  - Delegation: Data delegation object data
+  - String: ErrMsg error message, exists on failure
 
 - **Delegation**: the object to save the delegation information of the current delegation account
-  -String: Address The account address of the principal
-  -String: NodeId Node Id of the validator
-  -BigInteger: block height when StakingBlockNum initiated pledge
-  -BigInteger: DelegateEpoch's settlement cycle at the time of the most recent delegation to this candidate
-  -BigInteger: Released to initiate a free amount lock-in period of the commissioned account
-  -BigInteger: ReleasedHes initiated the free amount of the hesitation period commissioned by the commissioned account von
-  -BigInteger: RestrictingPlan initiates a lock-in period of the entrusted account
-  -BigInteger: RestrictingPlanHes initiated the hedging period of the locked account of the entrusted account
-  -BigInteger: Reduction von in revocation plan
+  - String: Address The account address of the principal
+  - String: NodeId Node Id of the validator
+  - BigInteger: block height when StakingBlockNum initiated pledge
+  - BigInteger: DelegateEpoch's settlement cycle at the time of the most recent delegation to this candidate
+  - BigInteger: Released to initiate a free amount lock-in period of the commissioned account
+  - BigInteger: ReleasedHes initiated the free amount of the hesitation period commissioned by the commissioned account von
+  - BigInteger: RestrictingPlan initiates a lock-in period of the entrusted account
+  - BigInteger: RestrictingPlanHes initiated the hedging period of the locked account of the entrusted account
+  - BigInteger: Reduction von in revocation plan
 - **Java SDK contract use**
 
 ```java
@@ -427,9 +427,9 @@ Delegation delegation = baseResponse.data;
 > Reduction / revocation of commission(all reductions are revocation)
 
 - **Introduction**
-  -String: nodeId node id, hexadecimal format, starting with 0x
-  -BigInteger: The stakingBlockNum entrusted node has a high pledge block, which represents a unique sign of a pledge of a node
-  -BigInteger: the commission amount of stakingAmount reduction(based on the smallest unit, 1LAT = 10**18 von)
+  - String: nodeId node id, hexadecimal format, starting with 0x
+  - BigInteger: The stakingBlockNum entrusted node has a high pledge block, which represents a unique sign of a pledge of a node
+  - BigInteger: the commission amount of stakingAmount reduction(based on the smallest unit, 1LAT = 10**18 von)
 - **return value**
 
 ```
@@ -437,9 +437,9 @@ BaseRespons
 ```
 
 -BaseResponse: General Response Packet
-  -int: Code result identification, 1 is success, 0 is failure
-  -String: Data response data
-  -String: ErrMsg error message, exists on failure
+  - int: Code result identification, 1 is success, 0 is failure
+  - String: Data response data
+  - String: ErrMsg error message, exists on failure
 
 - **Contract use**
 
@@ -485,47 +485,47 @@ BaseResponse<List<Node >> baseResponse
 ```
 
 -BaseResponse<List<Node >>
-  -int: Code result identification, 1 is success, 0 is failure
-  -List<Node>: Data nodeList object data
-  -String: ErrMsg error message, exists on failure
+  - int: Code result identification, 1 is success, 0 is failure
+  - List<Node>: Data nodeList object data
+  - String: ErrMsg error message, exists on failure
 
 - **Node**: object for saving node information for a single current settlement cycle
 
-  -String: BenefitAddress is used to accept the block reward and pledged reward income account
+  - String: BenefitAddress is used to accept the block reward and pledged reward income account
 
-  -String: The description of the Details node(the length is limited, indicating the description of the node)
+  - String: The description of the Details node(the length is limited, indicating the description of the node)
 
-  -String: NodeId The node Id of the pledge(also called the candidate's node Id)
+  - String: NodeId The node Id of the pledge(also called the candidate's node Id)
 
-  -String: NodeName The name of the node being pledged(the length is limited, indicating the name of the node)
+  - String: NodeName The name of the node being pledged(the length is limited, indicating the name of the node)
 
-  -BigInteger: ProgramVersion The real version number of the PlatON process of the pledged node(the interface for obtaining the version number is provided by the governance)
+  - BigInteger: ProgramVersion The real version number of the PlatON process of the pledged node(the interface for obtaining the version number is provided by the governance)
 
-  -BigInteger: Released von who initiated a free amount locked period pledged account
+  - BigInteger: Released von who initiated a free amount locked period pledged account
 
-  -BigInteger: ReleasedHes initiated the free amount of the hesitation period of the pledged account
+  - BigInteger: ReleasedHes initiated the free amount of the hesitation period of the pledged account
 
-  -BigInteger: RestrictingPlan initiates the lock-up period of the locked account amount of the pledged account.
+  - BigInteger: RestrictingPlan initiates the lock-up period of the locked account amount of the pledged account.
 
-  -BigInteger: RestrictingPlanHes initiated the hedging period of the locked amount of the pledged account
+  - BigInteger: RestrictingPlanHes initiated the hedging period of the locked amount of the pledged account
 
-  -BigInteger: Shares the current candidate's total pledge plus the number of entrusted vons
+  - BigInteger: Shares the current candidate's total pledge plus the number of entrusted vons
 
-  -String: StakingAddress The account used when initiating the pledge(when the pledge is cancelled, von will be returned to the account or the account's lock information)
+  - String: StakingAddress The account used when initiating the pledge(when the pledge is cancelled, von will be returned to the account or the account's lock information)
 
-  -BigInteger: block height when StakingBlockNum initiated pledge
+  - BigInteger: block height when StakingBlockNum initiated pledge
 
-  -BigInteger: StakingEpoch's current settlement cycle when the pledge amount is changed
+  - BigInteger: StakingEpoch's current settlement cycle when the pledge amount is changed
 
-  -BigInteger: StakingTxIndex transaction index when pledge is initiated
+  - BigInteger: StakingTxIndex transaction index when pledge is initiated
 
-  -BigInteger: Status of the status candidate, 0: node is available, 1: node is unavailable, 2: node block rate is low but the removal condition is not met,
+  - BigInteger: Status of the status candidate, 0: node is available, 1: node is unavailable, 2: node block rate is low but the removal condition is not met,
 
     4: The node's von is insufficient to the minimum pledge threshold(only the penultimate bit is 1), 8: the node is reported to be double signed, 16: the node block rate is low and the removal condition is reached(the penultimate bit is 1); : Node initiates cancellation
 
-  -BigInteger: ValidatorTerm
+  - BigInteger: ValidatorTerm
 
-  -String: The third-party homepage of the Website node(the length of the node is the homepage of the node)
+  - String: The third-party homepage of the Website node(the length of the node is the homepage of the node)
 
 - **Java SDK contract use**
 
@@ -551,45 +551,45 @@ BaseResponse<List<Node >> baseResponse
 ```
 
 -BaseResponse<List<Node >>
-  -int: Code result identification, 1 is success, 0 is failure
-  -List<Node>: Data nodeList object data
-  -String: ErrMsg error message, exists on failure
+  - int: Code result identification, 1 is success, 0 is failure
+  - List<Node>: Data nodeList object data
+  - String: ErrMsg error message, exists on failure
 
 - **Node**: object that saves the information of a single current consensus cycle verification node
 
-  -String: BenefitAddress is used to accept the block reward and pledged reward income account
+  - String: BenefitAddress is used to accept the block reward and pledged reward income account
 
-  -String: The description of the Details node(the length is limited, indicating the description of the node)
+  - String: The description of the Details node(the length is limited, indicating the description of the node)
 
-  -String: NodeId The node Id of the pledge(also called the candidate's node Id)
+  - String: NodeId The node Id of the pledge(also called the candidate's node Id)
 
-  -String: NodeName The name of the node being pledged(the length is limited, indicating the name of the node)
+  - String: NodeName The name of the node being pledged(the length is limited, indicating the name of the node)
 
-  -BigInteger: ProgramVersion The real version number of the PlatON process of the pledged node(the interface for obtaining the version number is provided by the governance)
+  - BigInteger: ProgramVersion The real version number of the PlatON process of the pledged node(the interface for obtaining the version number is provided by the governance)
 
-  -BigInteger: Released von who initiated a free amount locked period pledged account
+  - BigInteger: Released von who initiated a free amount locked period pledged account
 
-  -BigInteger: ReleasedHes initiated the free amount of the hesitation period of the pledged account
+  - BigInteger: ReleasedHes initiated the free amount of the hesitation period of the pledged account
 
-  -BigInteger: RestrictingPlan initiates the lock-up period of the locked account amount of the pledged account.
+  - BigInteger: RestrictingPlan initiates the lock-up period of the locked account amount of the pledged account.
 
-  -BigInteger: RestrictingPlanHes initiated the hedging period of the locked amount of the pledged account
+  - BigInteger: RestrictingPlanHes initiated the hedging period of the locked amount of the pledged account
 
-  -BigInteger: Shares the current candidate's total pledge plus the number of entrusted vons
+  - BigInteger: Shares the current candidate's total pledge plus the number of entrusted vons
 
-  -String: StakingAddress The account used when initiating the pledge(when the pledge is cancelled, von will be returned to the account or the account's lock information)
+  - String: StakingAddress The account used when initiating the pledge(when the pledge is cancelled, von will be returned to the account or the account's lock information)
 
-  -BigInteger: block height when StakingBlockNum initiated pledge
+  - BigInteger: block height when StakingBlockNum initiated pledge
 
-  -BigInteger: StakingEpoch's current settlement cycle when the pledge amount is changed
+  - BigInteger: StakingEpoch's current settlement cycle when the pledge amount is changed
 
-  -BigInteger: StakingTxIndex transaction index when pledge is initiated
+  - BigInteger: StakingTxIndex transaction index when pledge is initiated
 
-  -BigInteger: Status of the status candidate, 0: node is available, 1: node is unavailable, 2: node block rate is low but the removal condition is not met, 4: The node's von is less than the minimum pledge threshold(only the penultimate bit is 1),8: The node is reported with double sign, 16: The node's block generation rate is low and the removal condition is reached(the penultimate bit is 1); 32: The node actively initiates the cancellation
+  - BigInteger: Status of the status candidate, 0: node is available, 1: node is unavailable, 2: node block rate is low but the removal condition is not met, 4: The node's von is less than the minimum pledge threshold(only the penultimate bit is 1),8: The node is reported with double sign, 16: The node's block generation rate is low and the removal condition is reached(the penultimate bit is 1); 32: The node actively initiates the cancellation
 
-  -BigInteger: ValidatorTerm
+  - BigInteger: ValidatorTerm
 
-  -String: The third-party homepage of the Website node(the length of the node is the homepage of the node)
+  - String: The third-party homepage of the Website node(the length of the node is the homepage of the node)
 
 - **Java SDK contract use**
 
@@ -613,47 +613,47 @@ BaseResponse<List<Node >> baseResponse
 ```
 
 -BaseResponse<List<Node >>
-  -int: Code result identification, 1 is success, 0 is failure
-  -List<Node>: Data nodeList object data
-  -String: ErrMsg error message, exists on failure
+  - int: Code result identification, 1 is success, 0 is failure
+  - List<Node>: Data nodeList object data
+  - String: ErrMsg error message, exists on failure
 
 - **Node**: holds a single candidate node information object
 
-  -String: BenefitAddress is used to accept the block reward and pledged reward income account
+  - String: BenefitAddress is used to accept the block reward and pledged reward income account
 
-  -String: The description of the Details node(the length is limited, indicating the description of the node)
+  - String: The description of the Details node(the length is limited, indicating the description of the node)
 
-  -String: NodeId The node Id of the pledge(also called the candidate's node Id)
+  - String: NodeId The node Id of the pledge(also called the candidate's node Id)
 
-  -String: NodeName The name of the node being pledged(the length is limited, indicating the name of the node)
+  - String: NodeName The name of the node being pledged(the length is limited, indicating the name of the node)
 
-  -BigInteger: ProgramVersion The real version number of the PlatON process of the pledged node(the interface for obtaining the version number is provided by the governance)
+  - BigInteger: ProgramVersion The real version number of the PlatON process of the pledged node(the interface for obtaining the version number is provided by the governance)
 
-  -BigInteger: Released von who initiated a free amount locked period pledged account
+  - BigInteger: Released von who initiated a free amount locked period pledged account
 
-  -BigInteger: ReleasedHes initiated the free amount of the hesitation period of the pledged account
+  - BigInteger: ReleasedHes initiated the free amount of the hesitation period of the pledged account
 
-  -BigInteger: RestrictingPlan initiates the lock-up period of the locked account amount of the pledged account.
+  - BigInteger: RestrictingPlan initiates the lock-up period of the locked account amount of the pledged account.
 
-  -BigInteger: RestrictingPlanHes initiated the hedging period of the locked amount of the pledged account
+  - BigInteger: RestrictingPlanHes initiated the hedging period of the locked amount of the pledged account
 
-  -BigInteger: Shares the current candidate's total pledge plus the number of entrusted vons
+  - BigInteger: Shares the current candidate's total pledge plus the number of entrusted vons
 
-  -String: StakingAddress The account used when initiating the pledge(when the pledge is cancelled, von will be returned to the account or the account's lock information)
+  - String: StakingAddress The account used when initiating the pledge(when the pledge is cancelled, von will be returned to the account or the account's lock information)
 
-  -BigInteger: block height when StakingBlockNum initiated pledge
+  - BigInteger: block height when StakingBlockNum initiated pledge
 
-  -BigInteger: StakingEpoch's current settlement cycle when the pledge amount is changed
+  - BigInteger: StakingEpoch's current settlement cycle when the pledge amount is changed
 
-  -BigInteger: StakingTxIndex transaction index when pledge is initiated
+  - BigInteger: StakingTxIndex transaction index when pledge is initiated
 
-  -BigInteger: Status of the status candidate, 0: node is available, 1: node is unavailable, 2: node block rate is low but the removal condition is not met,
+  - BigInteger: Status of the status candidate, 0: node is available, 1: node is unavailable, 2: node block rate is low but the removal condition is not met,
 
     4: The node's von is insufficient to the minimum pledge threshold(only the penultimate bit is 1), 8: the node is reported to be double signed, 16: the node block rate is low and the removal condition is reached(the penultimate bit is 1); : Node initiates cancellation
 
-  -BigInteger: ValidatorTerm
+  - BigInteger: ValidatorTerm
 
-  -String: The third-party homepage of the Website node(the length of the node is the homepage of the node)
+  - String: The third-party homepage of the Website node(the length of the node is the homepage of the node)
 
 - **Java SDK contract use**
 
@@ -684,22 +684,22 @@ ProposalContract contract = ProposalContract.load(web3j, credentials, chainId);
 > Submit a Proposal
 
 - **Introduction**
-  -Proposal: Submit proposals
+  - Proposal: Submit proposals
 - **Proposal Type Description**
-  -TextProposal: 0x01, text proposal
-  -VersionProposal: 0x02, upgrade proposal
-  -CancelProposal: 0x04, cancel proposal
+  - TextProposal: 0x01, text proposal
+  - VersionProposal: 0x02, upgrade proposal
+  - CancelProposal: 0x04, cancel proposal
 - **Proposal status definition**
-  -For text proposals, there are three states: 0x01,0x02, 0x03;
-  -For the upgrade proposal, there are four states: 0x01,0x03, 0x04, 0x05, 0x06.
-  -For cancellation proposals, there are three states: 0x01,0x02, 0x03;
+  - For text proposals, there are three states: 0x01,0x02, 0x03;
+  - For the upgrade proposal, there are four states: 0x01,0x03, 0x04, 0x05, 0x06.
+  - For cancellation proposals, there are three states: 0x01,0x02, 0x03;
 - **Statement**
-  -Voting: 0x01, voting
-  -Pass: 0x02, voted through
-  -Failed: 0x03, voting failed
-  -PreActive: 0x04,(upgrade proposal) pre-effective
-  -Active: 0x05,(upgrade proposal) takes effect
-  -Canceled: 0x06,(upgrade proposal) canceled
+  - Voting: 0x01, voting
+  - Pass: 0x02, voted through
+  - Failed: 0x03, voting failed
+  - PreActive: 0x04,(upgrade proposal) pre-effective
+  - Active: 0x05,(upgrade proposal) takes effect
+  - Canceled: 0x06,(upgrade proposal) canceled
 - **return value**
 
 ```
@@ -707,9 +707,9 @@ BaseRespons
 ```
 
 -BaseResponse: General Response Packet
-  -int: Code result identification, 1 is success, 0 is failure
-  -String: Data response data
-  -String: ErrMsg error message, exists on failure
+  - int: Code result identification, 1 is success, 0 is failure
+  - String: Data response data
+  - String: ErrMsg error message, exists on failure
 
 - **Contract use**
 
@@ -727,10 +727,10 @@ BaseResponse baseResponse = proposalContract.getSubmitProposalResult(platonSendT
 > Vote on proposals
 
 - **Introduction**
-  -ProgramVersion: the real version of the ProgramVersion program, managed by the rpc interface admin_getProgramVersion
-  -VoteOption: voteOption voting type, YEAS in favor, NAYS against, ABSTENTIONS abstaining
-  -String: proposalID proposal ID
-  -String: verifier declared node, can only be validator / candidate
+  - ProgramVersion: the real version of the ProgramVersion program, managed by the rpc interface admin_getProgramVersion
+  - VoteOption: voteOption voting type, YEAS in favor, NAYS against, ABSTENTIONS abstaining
+  - String: proposalID proposal ID
+  - String: verifier declared node, can only be validator / candidate
 - **return value**
 
 ```
@@ -738,9 +738,9 @@ BaseRespons
 ```
 
 -BaseResponse: General Response Packet
-  -int: Code result identification, 1 is success, 0 is failure
-  -String: Data response data
-  -String: ErrMsg error message, exists on failure
+  - int: Code result identification, 1 is success, 0 is failure
+  - String: Data response data
+  - String: ErrMsg error message, exists on failure
 
 - **Contract use**:
 
@@ -759,7 +759,7 @@ BaseResponse baseResponse = voteInfo.getVoteContract(). GetVoteResult(platonSend
 > Query Proposal
 
 - **Introduction**
-  -String: proposalID proposal id
+  - String: proposalID proposal id
 - **return value**
 
 ```
@@ -768,21 +768,21 @@ BaseResponse<Proposal>
 ```
 
 -BaseResponse<Proposal>
-  -int: Code result identification, 1 is success, 0 is failure
-  -Proposal: Data Proposal object data
-  -String: ErrMsg error message, exists on failure
+  - int: Code result identification, 1 is success, 0 is failure
+  - Proposal: Data Proposal object data
+  - String: ErrMsg error message, exists on failure
 
 - **Proposal**: Objects that hold information about a single proposal
-  -String: proposalId
-  -String: proposer ID of the proposal node
-  -int: proposalType proposal type, 0x01: text proposal; 0x02: upgrade proposal; 0x03 parameter proposal
-  -String: piPid proposal PIPID
-  -BigInteger: submitBlock
-  -BigInteger: endVotingBlock block height
-  -BigInteger: newVersion
-  -BigInteger: ID of the promotion proposal to be canceled by the toBeCanceled proposal
-  -BigInteger: activeBlock(if the vote passes) the effective block height(endVotingBlock + 20 + 4 * 250<effective block height<= endVotingBlock + 20 + 10 * 250)
-  -String: verifier
+  - String: proposalId
+  - String: proposer ID of the proposal node
+  - int: proposalType proposal type, 0x01: text proposal; 0x02: upgrade proposal; 0x03 parameter proposal
+  - String: piPid proposal PIPID
+  - BigInteger: submitBlock
+  - BigInteger: endVotingBlock block height
+  - BigInteger: newVersion
+  - BigInteger: ID of the promotion proposal to be canceled by the toBeCanceled proposal
+  - BigInteger: activeBlock(if the vote passes) the effective block height(endVotingBlock + 20 + 4 * 250<effective block height<= endVotingBlock + 20 + 10 * 250)
+  - String: verifier
 - **Contract use**
 
 ```java
@@ -798,7 +798,7 @@ Proposal proposal = baseResponse.data;
 > Query Proposal Results
 
 - **Introduction**
-  -String: proposalID proposal ID
+  - String: proposalID proposal ID
 - **return value**
 
 ```
@@ -806,17 +806,17 @@ BaseResponse<TallyResult>
 ```
 
 -BaseResponse<TallyResult>
-  -int: Code result identification, 1 is success, 0 is failure
-  -TallyResult: Data TallyResult object data
-  -String: ErrMsg error message, exists on failure
+  - int: Code result identification, 1 is success, 0 is failure
+  - TallyResult: Data TallyResult object data
+  - String: ErrMsg error message, exists on failure
 
 - **TallyResult**: Object that holds the results of a single proposal
-  -String: proposalID
-  -BigInteger: yeas votes
-  -BigInteger: nays
-  -BigInteger: abstentions
-  -BigInteger: accuVerifiers Total number of validators who have qualified to vote throughout the voting period
-  -int: status proposal status
+  - String: proposalID
+  - BigInteger: yeas votes
+  - BigInteger: nays
+  - BigInteger: abstentions
+  - BigInteger: accuVerifiers Total number of validators who have qualified to vote throughout the voting period
+  - int: status proposal status
 - **Contract use**
 
 ```java
@@ -841,21 +841,21 @@ BaseResponse<List<Proposal >>
 ```
 
 -BaseResponse<List<Proposal >>
-  -int: Code result identification, 1 is success, 0 is failure
-  -List<Proposal>: Data ProposalList object data
-  -String: ErrMsg error message, exists on failure
+  - int: Code result identification, 1 is success, 0 is failure
+  - List<Proposal>: Data ProposalList object data
+  - String: ErrMsg error message, exists on failure
 
 - **Proposal**: object for saving a single proposal
-  -String: proposalId
-  -String: proposer ID of the proposal node
-  -int: proposalType proposal type, 0x01: text proposal; 0x02: upgrade proposal; 0x03 parameter proposal
-  -String: piPid proposal PIPID
-  -BigInteger: submitBlock
-  -BigInteger: endVotingBlock block height
-  -BigInteger: newVersion
-  -String: ID of the promotion proposal to be canceled by the toBeCanceled proposal
-  -BigInteger: activeBlock(if the vote passes) the effective block height(endVotingBlock + 20 + 4 * 250<effective block height<= endVotingBlock + 20 + 10 * 250)
-  -String: verifier
+  - String: proposalId
+  - String: proposer ID of the proposal node
+  - int: proposalType proposal type, 0x01: text proposal; 0x02: upgrade proposal; 0x03 parameter proposal
+  - String: piPid proposal PIPID
+  - BigInteger: submitBlock
+  - BigInteger: endVotingBlock block height
+  - BigInteger: newVersion
+  - String: ID of the promotion proposal to be canceled by the toBeCanceled proposal
+  - BigInteger: activeBlock(if the vote passes) the effective block height(endVotingBlock + 20 + 4 * 250<effective block height<= endVotingBlock + 20 + 10 * 250)
+  - String: verifier
 - **Contract use**
 
 ```java
@@ -868,8 +868,8 @@ List<Proposal> proposalList = baseResponse.data;
 > Release statement
 
 - **Introduction**
-  -ProgramVersion: the real version of the ProgramVersion program, managed by the rpc interface admin_getProgramVersion
-  -String: verifier declared node, can only be validator / candidate
+  - ProgramVersion: the real version of the ProgramVersion program, managed by the rpc interface admin_getProgramVersion
+  - String: verifier declared node, can only be validator / candidate
 - **return value**
 
 ```
@@ -878,9 +878,9 @@ BaseRespons
 ```
 
 -BaseResponse: General Response Packet
-  -int: Code result identification, 1 is success, 0 is failure
-  -String: Data response data
-  -String: ErrMsg error message, exists on failure
+  - int: Code result identification, 1 is success, 0 is failure
+  - String: Data response data
+  - String: ErrMsg error message, exists on failure
 
 - **Contract use**
 
@@ -907,9 +907,9 @@ BaseRespons
 ```
 
 -BaseResponse: General Response Packet
-  -int: Code result identification, 1 is success, 0 is failure
-  -String: Data response data
-  -String: ErrMsg error message, exists on failure
+  - int: Code result identification, 1 is success, 0 is failure
+  - String: Data response data
+  - String: ErrMsg error message, exists on failure
 
 - **Contract use**
 
@@ -941,8 +941,8 @@ SlashContract contract = SlashContract.load(web3j, credentials, chainId);
 > Submit a Proposal
 
 - **Introduction**
-  -DuplicateSignType: DuplicateSignType enumeration, representing double sign types: prepareBlock, EprepareVote, viewChange
-  -String: data json value of a single evidence, format refer to [RPC interface Evidences](# evidences_interface)
+  - DuplicateSignType: DuplicateSignType enumeration, representing double sign types: prepareBlock, EprepareVote, viewChange
+  - String: data json value of a single evidence, format refer to [RPC interface Evidences](# evidences_interface)
 - **return value**
 
 ```
@@ -951,9 +951,9 @@ BaseRespons
 ```
 
 -BaseResponse: General Response Packet
-  -int: Code result identification, 1 is success, 0 is failure
-  -String: Data response data
-  -String: ErrMsg error message, exists on failure
+  - int: Code result identification, 1 is success, 0 is failure
+  - String: Data response data
+  - String: ErrMsg error message, exists on failure
 
 - **Contract use**
 
@@ -969,9 +969,9 @@ BaseResponse baseResponse = slashContract.getReportDoubleSignResult(platonSendTr
 > Query whether a node has been reported as oversigned
 
 - **Introduction**
-  -DuplicateSignType: DuplicateSignType enumeration, representing double sign types: prepareBlock, EprepareVote, viewChange
-  -String: address of the node reported by address
-  -BigInteger: blockNumber multi-sign block height
+  - DuplicateSignType: DuplicateSignType enumeration, representing double sign types: prepareBlock, EprepareVote, viewChange
+  - String: address of the node reported by address
+  - BigInteger: blockNumber multi-sign block height
 - **return value**
 
 ```
@@ -980,9 +980,9 @@ BaseRespons
 ```
 
 -BaseResponse: General Response Packet
-  -int: Code result identification, 1 is success, 0 is failure
-  -String: Data response data
-  -String: ErrMsg error message, exists on failure
+  - int: Code result identification, 1 is success, 0 is failure
+  - String: Data response data
+  - String: ErrMsg error message, exists on failure
 
 - **Contract use**
 
@@ -1014,10 +1014,10 @@ RestrictingPlanContract contract = RestrictingPlanContract.load(web3j, credentia
 > Create Lockup Plan
 
 - **Introduction**
-  -String: address lock position is released to the account
-  -List<RestrictingPlan>: plan Locked plan list(array)
-    -epoch: indicates a multiple of the settlement cycle. The product of the number of blocks produced per settlement cycle indicates the release of locked funds at the height of the target block. If account is the incentive pool address, the period value is a multiple of 120(that is, 30 * 4). In addition, period, the number of blocks per cycle must be at least greater than the highest irreversible block height.
-    -amount: indicates the amount to be released on the target block.
+  - String: address lock position is released to the account
+  - List<RestrictingPlan>: plan Locked plan list(array)
+    - epoch: indicates a multiple of the settlement cycle. The product of the number of blocks produced per settlement cycle indicates the release of locked funds at the height of the target block. If account is the incentive pool address, the period value is a multiple of 120(that is, 30 * 4). In addition, period, the number of blocks per cycle must be at least greater than the highest irreversible block height.
+    - amount: indicates the amount to be released on the target block.
 - **return value**
 
 ```
@@ -1026,9 +1026,9 @@ BaseResponse
 ```
 
 -BaseResponse: General Response Packet
-  -int: Code result identification, 1 is success, 0 is failure
-  -String: Data response data
-  -String: ErrMsg error message, exists on failure
+  - int: Code result identification, 1 is success, 0 is failure
+  - String: Data response data
+  - String: ErrMsg error message, exists on failure
 
 - **Contract use**
 
@@ -1046,7 +1046,7 @@ BaseResponse baseResponse = restrictingPlanContract.getCreateRestrictingPlanResu
 > Get Locked Up Plan
 
 - **Introduction**
-  -String: address lock position is released to the account
+  - String: address lock position is released to the account
 - **return value**
 
 ```
@@ -1054,18 +1054,18 @@ BaseResponse<RestrictingItem> baseResponse
 ```
 
 -BaseResponse<RestrictingItem> description
-  -int: Code result identification, 1 is success, 0 is failure
-  -RestrictingItem: Data RestrictingItem object data
-  -String: ErrMsg error message, exists on failure
+  - int: Code result identification, 1 is success, 0 is failure
+  - RestrictingItem: Data RestrictingItem object data
+  - String: ErrMsg error message, exists on failure
 
 - **RestrictingItem**: save lock information object
-  -BigInteger: balance
-  -BigInteger: pledge pledge / mortgage amount
-  -BigInteger: debt release amount due
-  -List<RestrictingInfo>: info lock entry information
+  - BigInteger: balance
+  - BigInteger: pledge pledge / mortgage amount
+  - BigInteger: debt release amount due
+  - List<RestrictingInfo>: info lock entry information
 - **RestrictingInfo**: Object that saves information of a single lock entry
-  -BigInteger: blockNumber releases block height
-  -BigInteger: amount released
+  - BigInteger: blockNumber releases block height
+  - BigInteger: amount released
 - **Contract use**
 
 ```java
@@ -1339,12 +1339,12 @@ BigInteger req = request.send(). GetBlockNumber();
 > Back to query address balance
 
 - **parameters**
-  -String: address The address to query
-  -DefaultBlockParameter:
-    -DefaultBlockParameterName.LATEST latest block height(default)
-    -DefaultBlockParameterName.EARLIEST minimum block height
-    -DefaultBlockParameterName.PENDING unpackaged transaction
-    -DefaultBlockParameter.valueOf(BigInteger blockNumber)
+  - String: address The address to query
+  - DefaultBlockParameter:
+    - DefaultBlockParameterName.LATEST latest block height(default)
+    - DefaultBlockParameterName.EARLIEST minimum block height
+    - DefaultBlockParameterName.PENDING unpackaged transaction
+    - DefaultBlockParameter.valueOf(BigInteger blockNumber)
 - **return value**
 
 ```java
@@ -1369,13 +1369,13 @@ BigInteger req = request.send(). GetBlockNumber();
 Return value from storage location of given address
 
 - **parameters**
-  -String: address
-  -BigInteger: integer for position in position memory
-  -DefaultBlockParameter:
-    -DefaultBlockParameterName.LATEST latest block height(default)
-    -DefaultBlockParameterName.EARLIEST minimum block height
-    -DefaultBlockParameterName.PENDING unpackaged transaction
-    -DefaultBlockParameter.valueOf(BigInteger blockNumber)
+  - String: address
+  - BigInteger: integer for position in position memory
+  - DefaultBlockParameter:
+    - DefaultBlockParameterName.LATEST latest block height(default)
+    - DefaultBlockParameterName.EARLIEST minimum block height
+    - DefaultBlockParameterName.PENDING unpackaged transaction
+    - DefaultBlockParameter.valueOf(BigInteger blockNumber)
 - **return value**
 
 ```java
@@ -1400,7 +1400,7 @@ String req = request.send(). GetData();
 > Query the number of transactions in a block according to the block hash
 
 - **parameters**
-  -String: blockHash block hash
+  - String: blockHash block hash
 - **return value**
 
 ```java
@@ -1424,12 +1424,12 @@ BigInteger req = request.send(). GetTransactionCount();
 > Query the number of transactions sent by the address according to the address
 
 - **parameters**
-  -String: address
-  -DefaultBlockParameter:
-    -DefaultBlockParameterName.LATEST latest block height(default)
-    -DefaultBlockParameterName.EARLIEST minimum block height
-    -DefaultBlockParameterName.PENDING unpackaged transaction
-    -DefaultBlockParameter.valueOf(BigInteger blockNumber)
+  - String: address
+  - DefaultBlockParameter:
+    - DefaultBlockParameterName.LATEST latest block height(default)
+    - DefaultBlockParameterName.EARLIEST minimum block height
+    - DefaultBlockParameterName.PENDING unpackaged transaction
+    - DefaultBlockParameter.valueOf(BigInteger blockNumber)
 - **return value**
 
 ```java
@@ -1452,11 +1452,11 @@ BigInteger req = request.send(). GetTransactionCount();
 > Returns the total number of transactions in block high school based on block height
 
 - **parameters**
-  -DefaultBlockParameter:
-    -DefaultBlockParameterName.LATEST latest block height(default)
-    -DefaultBlockParameterName.EARLIEST minimum block height
-    -DefaultBlockParameterName.PENDING unpackaged transaction
-    -DefaultBlockParameter.valueOf(BigInteger blockNumber)
+  - DefaultBlockParameter:
+    - DefaultBlockParameterName.LATEST latest block height(default)
+    - DefaultBlockParameterName.EARLIEST minimum block height
+    - DefaultBlockParameterName.PENDING unpackaged transaction
+    - DefaultBlockParameter.valueOf(BigInteger blockNumber)
 - **return value**
 
 ```java
@@ -1478,12 +1478,12 @@ BigInteger req = request.send(). GetTransactionCount();
 > Return code for given address
 
 - **parameters**
-  -String: address
-  -DefaultBlockParameter:
-    -DefaultBlockParameterName.LATEST latest block height(default)
-    -DefaultBlockParameterName.EARLIEST minimum block height
-    -DefaultBlockParameterName.PENDING unpackaged transaction
-    -DefaultBlockParameter.valueOf(BigInteger blockNumber)
+  - String: address
+  - DefaultBlockParameter:
+    - DefaultBlockParameterName.LATEST latest block height(default)
+    - DefaultBlockParameterName.EARLIEST minimum block height
+    - DefaultBlockParameterName.PENDING unpackaged transaction
+    - DefaultBlockParameter.valueOf(BigInteger blockNumber)
 - **return value**
 
 ```java
@@ -1508,8 +1508,8 @@ String req = request.send(). GetCode();
 > Data Signature
 
 - **parameters**
-  -String: address
-  -String: sha3HashOfDataToSign data to be signed
+  - String: address
+  - String: sha3HashOfDataToSign data to be signed
 - **return value**
 
 ```java
@@ -1537,16 +1537,16 @@ Note: The address must be unlocked in advance
 > Send service signing transaction
 
 - **parameters**
-  -Transaction: Transaction: transaction structure
-    -String: from: transaction sending address
-    -String: to: address of transaction receiver
-    -BigInteger: gas: maximum gas usage for this transaction
-    -BigInteger: gasPrice: gas price
-    -BigInteger: value: transfer amount
-    -String: data: data on the chain
-    -BigInteger: nonce: transaction unique identifier
-      -Call platonGetTransactionCount, get the from address as a parameter, and get the total number of sent transactions to that address
-      -Each use of the address nonce +1
+  - Transaction: Transaction: transaction structure
+    - String: from: transaction sending address
+    - String: to: address of transaction receiver
+    - BigInteger: gas: maximum gas usage for this transaction
+    - BigInteger: gasPrice: gas price
+    - BigInteger: value: transfer amount
+    - String: data: data on the chain
+    - BigInteger: nonce: transaction unique identifier
+      - Call platonGetTransactionCount, get the from address as a parameter, and get the total number of sent transactions to that address
+      - Each use of the address nonce +1
 - **return value**
 
 ```java
@@ -1571,7 +1571,7 @@ String req = request.send(). GetTransactionHash();
 > Send transaction
 
 - **parameters**
-  -String: data: wallet signed data
+  - String: data: wallet signed data
 - **return value**
 
 ```java
@@ -1596,16 +1596,16 @@ String req = request.send(). GetTransactionHash();
 > Execute a message call transaction, the message call transaction is executed directly in the node 旳 VM without the need to execute through blockchain mining
 
 - **parameters**
-  -Transaction: Transaction: transaction structure
-    -String: from: transaction sending address
-    -String: to: address of transaction receiver
-    -BigInteger: gas: maximum gas usage for this transaction
-    -BigInteger: gasPrice: gas price
-    -BigInteger: value: transfer amount
-    -String: data: data on the chain
-    -BigInteger: nonce: transaction unique identifier
-      -Call platonGetTransactionCount, get the from address as a parameter, and get the total number of sent transactions to that address
-      -Each use of the address nonce +1
+  - Transaction: Transaction: transaction structure
+    - String: from: transaction sending address
+    - String: to: address of transaction receiver
+    - BigInteger: gas: maximum gas usage for this transaction
+    - BigInteger: gasPrice: gas price
+    - BigInteger: value: transfer amount
+    - String: data: data on the chain
+    - BigInteger: nonce: transaction unique identifier
+      - Call platonGetTransactionCount, get the from address as a parameter, and get the total number of sent transactions to that address
+      - Each use of the address nonce +1
 - **return value**
 
 ```java
@@ -1630,16 +1630,16 @@ String req = request.send(). GetValue();
 > Estimating contract method gas usage
 
 - **parameters**
-  -Transaction: Transaction: transaction structure
-    -String: from: transaction sending address
-    -String: to: address of transaction receiver
-    -BigInteger: gas: maximum gas usage for this transaction
-    -BigInteger: gasPrice: gas price
-    -BigInteger: value: transfer amount
-    -String: data: data on the chain
-    -BigInteger: nonce: transaction unique identifier
-      -Call platonGetTransactionCount, get the from address as a parameter, and get the total number of sent transactions to that address
-      -Each use of the address nonce +1
+  - Transaction: Transaction: transaction structure
+    - String: from: transaction sending address
+    - String: to: address of transaction receiver
+    - BigInteger: gas: maximum gas usage for this transaction
+    - BigInteger: gasPrice: gas price
+    - BigInteger: value: transfer amount
+    - String: data: data on the chain
+    - BigInteger: nonce: transaction unique identifier
+      - Call platonGetTransactionCount, get the from address as a parameter, and get the total number of sent transactions to that address
+      - Each use of the address nonce +1
 - **return value**
 
 ```java
@@ -1664,10 +1664,10 @@ BigInteger req = request.send(). GetAmountUsed();
 > Query block information based on block hash
 
 - **parameters**
-  -String: blockHash block hash
-  -boolean:
-    -true: complete transaction list in block
-    -false: only transaction hash list in block
+  - String: blockHash block hash
+  - boolean:
+    - true: complete transaction list in block
+    - false: only transaction hash list in block
 - **return value**
 
 ```java
@@ -1693,14 +1693,14 @@ Block req = request.send(). GetBlock();
 > Query block information based on block height
 
 - **parameters**
-  -DefaultBlockParameter:
-    -DefaultBlockParameterName.LATEST latest block height(default)
-    -DefaultBlockParameterName.EARLIEST minimum block height
-    -DefaultBlockParameterName.PENDING unpackaged transaction
-    -DefaultBlockParameter.valueOf(BigInteger blockNumber)
-  -boolean:
-    -true: complete transaction list in block
-    -false: only transaction hash list in block
+  - DefaultBlockParameter:
+    - DefaultBlockParameterName.LATEST latest block height(default)
+    - DefaultBlockParameterName.EARLIEST minimum block height
+    - DefaultBlockParameterName.PENDING unpackaged transaction
+    - DefaultBlockParameter.valueOf(BigInteger blockNumber)
+  - boolean:
+    - true: complete transaction list in block
+    - false: only transaction hash list in block
 - **return value**
 
 ```java
@@ -1724,8 +1724,8 @@ Block req = request.send(). GetBlock();
 > Query the transaction with the specified serial number in the block according to the block hash
 
 - **parameters**
-  -String: blockHash block hash
-  -BigInteger: transactionIndex number of the transaction in the block
+  - String: blockHash block hash
+  - BigInteger: transactionIndex number of the transaction in the block
 - **return value**
 
 ```java
@@ -1749,12 +1749,12 @@ Optional<Transaction> req = request.send(). GetTransaction();
 > Query the transaction with the specified serial number in the block according to the block height
 
 - **parameters**
-  -DefaultBlockParameter:
-    -DefaultBlockParameterName.LATEST latest block height(default)
-    -DefaultBlockParameterName.EARLIEST minimum block height
-    -DefaultBlockParameterName.PENDING unpackaged transaction
-    -DefaultBlockParameter.valueOf(BigInteger blockNumber)
-  -BigInteger: transactionIndex number of the transaction in the block
+  - DefaultBlockParameter:
+    - DefaultBlockParameterName.LATEST latest block height(default)
+    - DefaultBlockParameterName.EARLIEST minimum block height
+    - DefaultBlockParameterName.PENDING unpackaged transaction
+    - DefaultBlockParameter.valueOf(BigInteger blockNumber)
+  - BigInteger: transactionIndex number of the transaction in the block
 - **return value**
 
 ```java
@@ -1777,7 +1777,7 @@ Optional<Transaction> req = request.send(). GetTransaction();
 > Query transaction receipt based on transaction hash
 
 - **parameters**
-  -String: transactionHash
+  - String: transactionHash
 - **return value**
 
 ```java
@@ -1800,8 +1800,8 @@ Optional<TransactionReceipt> req = request.send(). GetTransactionReceipt();
 Create a filter to notify when the client receives a matching whisper message
 
 - **parameters**
-  -PlatonFilter: PlatonFilter:
-    -SingleTopic:
+  - PlatonFilter: PlatonFilter:
+    - SingleTopic:
 - **return value**
 
 ```java
@@ -1905,7 +1905,7 @@ BigInteger req = request.send(). GetFilterId();
 > Write in filter with specified number. This call is always needed when listening is no longer needed
 
 - **parameters**
-  -BigInteger: filterId: filter ID
+  - BigInteger: filterId: filter ID
 - **return value**
 
 ```java
@@ -1929,7 +1929,7 @@ boolean req = request.send(). isUninstalled();
 > Polling the specified filter and returning a newly generated log array since the last poll
 
 - **parameters**
-  -BigInteger: filterId: filter ID
+  - BigInteger: filterId: filter ID
 - **return value**
 
 ```java
@@ -1953,7 +1953,7 @@ List<PlatonLog.LogResult> req = request.send(). GetLogs();
 > Polling the specified filter and returning a newly generated log array since the last poll.
 
 - **parameters**
-  -BigInteger: filterId: filter ID
+  - BigInteger: filterId: filter ID
 - **return value**
 
 ```java
@@ -1977,8 +1977,8 @@ List<PlatonLog.LogResult> req = request.send(). GetLogs();
 > Return all logs in the specified filter
 
 - **parameters**
-  -PlatonFilter: PlatonFilter:
-    -SingleTopic:
+  - PlatonFilter: PlatonFilter:
+    - SingleTopic:
 - **return value**
 
 ```java
@@ -2031,9 +2031,9 @@ List<Transaction> transactions = res.getTransactions();
 > Store strings in local database.
 
 - **parameters**
-  -String: databaseName: database name
-  -String: keyName: key name
-  -String: stringToStore: the string to be stored
+  - String: databaseName: database name
+  - String: keyName: key name
+  - String: stringToStore: the string to be stored
 - **return value**
 
 ```java
@@ -2060,8 +2060,8 @@ List<DbPutString> = request.send(). ValueStored();
 Read string from local database
 
 - **parameters**
-  -String: databaseName: database name
-  -String: keyName: key name
+  - String: databaseName: database name
+  - String: keyName: key name
 - **return value**
 
 ```java
@@ -2086,9 +2086,9 @@ String req = request.send(). GetStoredValue();
 > Write binary data to local database
 
 - **parameters**
-  -String: databaseName: database name
-  -String: keyName: key name
-  -String: dataToStore: binary data to be stored
+  - String: databaseName: database name
+  - String: keyName: key name
+  - String: dataToStore: binary data to be stored
 - **return value**
 
 ```java
@@ -2113,8 +2113,8 @@ boolean req = request.send(). valueStored();
 > Read binary data from local database
 
 - **parameters**
-  -String: databaseName: database name
-  -String: keyName: key name
+  - String: databaseName: database name
+  - String: keyName: key name
 - **return value**
 
 ```java
@@ -2259,8 +2259,8 @@ ProgramVersion programVersion = req.send(). GetAdminProgramVersion();
 ```
 
 - **ProgramVersion Object Parsing**
-  -BigInteger: version: code version
-  -String: sign: code version signature
+  - BigInteger: version: code version
+  - String: sign: code version signature
 
 ### getSchnorrNIZKProve
 
