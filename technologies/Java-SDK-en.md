@@ -249,42 +249,42 @@ BaseResponse baseResponse = stakingContract.getAddStakingResult(platonSendTransa
 BaseResponse<Node> baseRespons
 ```
 
--BaseResponse<Node> description
-  -int: Code result flag, 1 is success, 0 is failure
-  -Node: Data Node object data
-  -String: ErrMsg error message, exists on failure
+- BaseResponse<Node> description
+  - int: Code result flag, 1 is success, 0 is failure
+  - Node: Data Node object data
+  - String: ErrMsg error message, exists on failure
 
 - **Node**: object that holds the current node pledge information
 
-  -String: BenefitAddress is used to accept the block reward and pledged reward income account
+  - String: BenefitAddress is used to accept the block reward and pledged reward income account
 
-  -String: The description of the Details node(the length is limited, indicating the description of the node)
+  - String: The description of the Details node(the length is limited, indicating the description of the node)
 
-  -String: NodeId The node Id of the pledge(also called the candidate's node Id)
+  - String: NodeId The node Id of the pledge(also called the candidate's node Id)
+ 
+  - String: NodeName The name of the node being pledged(the length is limited, indicating the name of the node)
 
-  -String: NodeName The name of the node being pledged(the length is limited, indicating the name of the node)
+  - BigInteger: ProgramVersion The real version number of the PlatON process of the pledged node(the interface for obtaining the version number is provided by the governance)
 
-  -BigInteger: ProgramVersion The real version number of the PlatON process of the pledged node(the interface for obtaining the version number is provided by the governance)
+  - BigInteger: Released von who initiated a free amount locked period pledged account
 
-  -BigInteger: Released von who initiated a free amount locked period pledged account
+  - BigInteger: ReleasedHes initiated the free amount of the hesitation period of the pledged account
 
-  -BigInteger: ReleasedHes initiated the free amount of the hesitation period of the pledged account
+  - BigInteger: RestrictingPlan initiates the lock-up period of the locked account amount of the pledged account.
 
-  -BigInteger: RestrictingPlan initiates the lock-up period of the locked account amount of the pledged account.
+  - BigInteger: RestrictingPlanHes initiated the hedging period of the locked amount of the pledged account
 
-  -BigInteger: RestrictingPlanHes initiated the hedging period of the locked amount of the pledged account
+  - BigInteger: Shares the current candidate's total pledge plus the number of entrusted vons
 
-  -BigInteger: Shares the current candidate's total pledge plus the number of entrusted vons
+  - String: StakingAddress The account used when initiating the pledge(when the pledge is cancelled, von will be returned to the account or the account's lock information)
 
-  -String: StakingAddress The account used when initiating the pledge(when the pledge is cancelled, von will be returned to the account or the account's lock information)
+  - BigInteger: block height when StakingBlockNum initiated pledge
 
-  -BigInteger: block height when StakingBlockNum initiated pledge
+  - BigInteger: StakingEpoch's current settlement cycle when the pledge amount is changed
 
-  -BigInteger: StakingEpoch's current settlement cycle when the pledge amount is changed
+  - BigInteger: StakingTxIndex transaction index when pledge is initiated
 
-  -BigInteger: StakingTxIndex transaction index when pledge is initiated
-
-  -BigInteger: Status of the status candidate, 0: node is available, 1: node is unavailable, 2: node block rate is low but the removal condition is not met,
+  - BigInteger: Status of the status candidate, 0: node is available, 1: node is unavailable, 2: node block rate is low but the removal condition is not met,
 
     4: The node's von is insufficient to the minimum pledge threshold(only the penultimate bit is 1), 8: the node is reported to be double signed, 16: the node block rate is low and the removal condition is reached(the penultimate bit is 1); : Node initiates cancellation
 
