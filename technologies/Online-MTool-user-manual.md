@@ -41,7 +41,7 @@ Please enter: y and press Enter to end.
 > - When the message `install and start mtool success` is displayed, MTool is successfully installed. If it is not successfully installed, please contact our official customer contact to feedback specific problems.
 > - When prompting `Please press any key to continue ... `, please press Enter to close the current cmd window.
 
-For related configuration, refer to the document [PlatON Node Installation and Deployment Manual.md](./PlatON-Install-Manual.md).
+For related configuration, refer to the document [PlatON Node Installation and Deployment Manual.md](./PlatON-Install-manual.md).
 
 ## 3 Configure Online MTool
 
