@@ -7,7 +7,7 @@ In order to facilitate node pledge, commission and governance related operations
 - MTool supports Ubuntu 18.04 and Windows 10. This document describes the installation and use of Windows 10.
 - MTool needs to connect to the verification node via RPC interface
 - To ensure node security, it is recommended that the node RPC port be accessed through Nginx proxy. Nginx uses Https and user authentication to strengthen security protection.
-- MTool provides two signature methods for transactions such as pledge: online signature and offline signature. This document describes the online signature operation. For offline signature, please refer to [Offline_MTool_User_Manual.md](./Offline_MTool_User_Manual.md).
+- MTool provides two signature methods for transactions such as pledge: online signature and offline signature. This document describes the online signature operation. For offline signature, please refer to [Offline MTool User Manual.md](./Offline-MTool-user-manual.md).
 
 ## 2 Install Online MTool
 
@@ -41,7 +41,7 @@ Please enter: y and press Enter to end.
 > - When the message `install and start mtool success` is displayed, MTool is successfully installed. If it is not successfully installed, please contact our official customer contact to feedback specific problems.
 > - When prompting `Please press any key to continue ... `, please press Enter to close the current cmd window.
 
-For related configuration, refer to the document [PlatON_Node_Installation_and_Deployment_Manual.md](./PlatON Node Installation and Deployment Manual.md).
+For related configuration, refer to the document [PlatON Node Installation and Deployment Manual.md](./PlatON-Install-Manual.md).
 
 ## 3 Configure Online MTool
 
@@ -277,7 +277,7 @@ Note: This report is a summary of all allocation details related to the start an
 
 ### 4.6 Entrusted Incentive Issuance Operation
 
-Before performing this operation, you need to perform other operations. For details, refer to [4.5 Commissioning rewards to generate report operations](#45-Commissioning rewards to generate report operations). step.
+Before performing this operation, you need to perform other operations. For details, refer to [4.5 Commissioning rewards to generate report operations](#4.5-Commissioning-rewards-to-generate-report-operations). step.
 
 Entrusted incentive distribution will backfill transaction hash and transaction status on the basis of the reward distribution file, and generate **reward distribution result report**. The report is stored in the csv file format. The generated file is in the C:\tools\mtool\current\reward_data\VerifierName\ directory. Where VerifierName is the name of the verifier.
 
@@ -430,3 +430,4 @@ mtool-client.bat help
 - Parameter Description
 
 > None
+
