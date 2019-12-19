@@ -7,7 +7,7 @@ In order to facilitate node pledge, commission and governance related operations
 - MTool supports Ubuntu 18.04 and Windows 10. This document describes the installation and use of Windows 10.
 - MTool needs to connect to the verification node through RPC interface. For the installation and deployment of verification node, please refer to [PlatON node installation and deployment manual.md](./ PlatON node installation and deployment manual.md)
 - To ensure node security, it is recommended that node RPC ports be accessed through Nginx proxy. Nginx uses Https and user authentication to strengthen security protection
-- MTool provides two signature methods for transactions such as pledge: online signature and offline signature. This document describes the offline signature operation. For online signature, please refer to [Online MTool User Manual.md](./ Online MTool User Manual.md)
+- MTool provides two signature methods for transactions such as pledge: online signature and offline signature. This document describes the offline signature operation. For online signature, please refer to [Online MTool User Manual.md](./Online-MTool-user-manual.md)
 
 ## 2 Install MTool
 
